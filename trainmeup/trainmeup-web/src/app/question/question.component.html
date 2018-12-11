@@ -1,0 +1,54 @@
+<div class="6u 12u$(medium)">
+	<h3>New Question</h3>
+	<h4>Choose category:</h4>
+	<div class="4u 12u$(small)">
+		<input type="radio" id="new" name="category" checked="">
+		<label for="new">New</label>
+	</div>
+	<ul class="actions">
+		<li><a routerLink="/categories" class="button">See categories</a></li>
+	</ul>
+	Location: /root/backend/java/
+	<input type="text" name="newcategory" placeholder="Enter new category"><br>
+	<div class="4u 12u$(small)">
+		<input type="radio" id="select" name="category">
+		<label for="select">Select</label>
+	</div>
+	<ul class="actions">
+		<li><a routerLink="/categories" class="button">Select category</a></li>
+	</ul>
+	Location: /root/backend/java/
+	<!-- <div class="select-wrapper">
+	  	<select name="categories">
+		    <option value="volvo">Spring</option>
+		    <option value="saab">Java</option>
+		    <option value="fiat">Cloud</option>
+		    <option value="audi">AI</option>
+	  	</select>
+  	</div> -->
+  	<hr>
+  	<h4>Question:</h4>
+  	<textarea name="question" rows="10" cols="60" placeholder="Enter new question"></textarea>
+  	<br>
+  	<h4>Answer:</h4>
+  	<div class="4u 12u$(small)">
+		<input type="radio" id="singlechoice" name="answer" checked="">
+		<label for="singlechoice">Single answer</label>
+	</div>
+  	<textarea name="answer" rows="10" cols="60" placeholder="Enter the answer"></textarea><br>
+  	<div class="4u 12u$(small)">
+		<input type="radio" id="multichoice" name="answer">
+		<label for="multichoice">Multi-choice</label>
+	</div>
+	<div>
+	  	<input type="text" name="op1" placeholder="Choice 1"><br>
+	  	<input type="text" name="op2" placeholder="Choice 2"><br>
+	  	<input type="text" name="op3" placeholder="Choice 3"><br>
+  	</div>
+  	
+  	<ul class="actions">
+		<li><button type="button" class="button default">Cancel</button></li>
+		<li><button type="button" class="button special">Save</button></li>
+	</ul>
+</div>
+

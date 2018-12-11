@@ -1,0 +1,18 @@
+<div class="6u 12u$(medium)">
+	<h3>Categories</h3>
+	<ul class="actions">
+		<li><button type="button" class="button default">Cancel</button></li>
+		<li><button type="button" class="button special">Select</button></li>
+	</ul>
+	<dx-tree-view
+	    #treeview
+	    [items]="categories"
+	    [width]="500"
+	    [searchEnabled]="false"
+	    searchMode="contains">
+	</dx-tree-view>
+	<ul class="actions">
+		<li><button type="button" class="button default">Cancel</button></li>
+		<li><button type="button" class="button special">Select</button></li>
+	</ul>
+</div>
