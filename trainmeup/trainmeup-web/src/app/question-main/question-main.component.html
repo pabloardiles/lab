@@ -1,0 +1,5 @@
+
+<div [ngSwitch]="showCategories">
+  <app-question *ngSwitchCase="false"></app-question>
+  <app-categories *ngSwitchCase="true"></app-categories>
+</div>

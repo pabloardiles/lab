@@ -1,18 +1,19 @@
 <div class="6u 12u$(medium)">
 	<h3>Categories</h3>
 	<ul class="actions">
-		<li><button type="button" class="button default">Cancel</button></li>
-		<li><button type="button" class="button special">Select</button></li>
+		<li><button class="button default" (click)="closeCategories()">Cancel</button></li>
+		<li><button class="button special" (click)="selectCategory()">Select</button></li>
 	</ul>
 	<dx-tree-view
 	    #treeview
 	    [items]="categories"
 	    [width]="500"
 	    [searchEnabled]="false"
-	    searchMode="contains">
+	    searchMode="contains"
+	    (onItemClick)="selectItem($event)">
 	</dx-tree-view>
 	<ul class="actions">
-		<li><button type="button" class="button default">Cancel</button></li>
-		<li><button type="button" class="button special">Select</button></li>
+		<li><button class="button default" (click)="closeCategories()">Cancel</button></li>
+		<li><button class="button special" (click)="selectCategory()">Select</button></li>
 	</ul>
 </div>

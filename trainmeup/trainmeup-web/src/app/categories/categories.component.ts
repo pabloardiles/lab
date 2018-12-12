@@ -1,7 +1,8 @@
-import { NgModule, Component, enableProdMode } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { DxTreeViewModule } from 'devextreme-angular';
+import { QuestionMainComponent } from '../question-main/question-main.component';
 
 export class Category {
     id: string;
@@ -16,10 +17,10 @@ export class Category {
     styleUrls: ['./categories.component.css']
 })
 export class CategoriesComponent {
-    categories: Category[];
-    currentItem: Category;
+	categories: Category[];
+    currentItem: Object;
 
-    constructor() {
+    constructor(private questionMain: QuestionMainComponent) {
         this.categories = [{
 			    id: "1",
 			    text: "Root",
@@ -239,30 +240,30 @@ export class CategoriesComponent {
 			}];
         this.currentItem = this.categories[0];
     }
+
     selectItem(e) {
-        this.currentItem = e.itemData;
+        this.currentItem = e.node;
     }
+
+	closeCategories(): void {
+    	this.questionMain.setCategoriesShown(false);
+  	}
+
+  	selectCategory(): void {
+  		var path = "";
+  		var tmpNode = this.currentItem;
+  		while(tmpNode.text != "Root") {
+  			path = tmpNode.text + "/" + path;
+  			tmpNode = tmpNode.parent;
+  		}
+  		path = "/Root/" + path;
+  		if (this.questionMain.questionState.categoryType == 'new') {
+  			this.questionMain.questionState.categoryNewPath = path;
+  		} else if (this.questionMain.questionState.categoryType == 'select') {
+  			this.questionMain.questionState.categorySelectPath = path;
+  		}
+  		
+    	this.closeCategories();
+  	}
 }
 
-
-
-
-/*
-
-
-import { Component, OnInit } from '@angular/core';
-
-@Component({
-  selector: 'app-categories',
-  templateUrl: './categories.component.html',
-  styleUrls: ['./categories.component.css']
-})
-export class CategoriesComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-*/

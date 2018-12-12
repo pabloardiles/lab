@@ -7,10 +7,9 @@ import { QuestionComponent } from './question/question.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AnswerComponent } from './answer/answer.component';
 import { CategoriesComponent } from './categories/categories.component';
-/*import { SideNavOuterToolbarModule, SideNavInnerToolbarModule } from './layouts';
-import { FooterModule } from './shared/components/footer/footer.component';*/
 
 import { DxTreeViewModule} from 'devextreme-angular';
+import { QuestionMainComponent } from './question-main/question-main.component';
 
 @NgModule({
   declarations: [
@@ -18,19 +17,15 @@ import { DxTreeViewModule} from 'devextreme-angular';
     DashboardComponent,
     QuestionComponent,
     AnswerComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    QuestionMainComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    /*SideNavOuterToolbarModule,
-    SideNavInnerToolbarModule,
-    FooterModule,*/
-
     DxTreeViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-//platformBrowserDynamic().bootstrapModule(AppModule);
