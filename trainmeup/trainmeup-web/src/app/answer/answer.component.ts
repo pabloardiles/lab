@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-answer',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AnswerComponent implements OnInit {
 
-  constructor() { }
+  showQuestion: boolean = false;
+  showAnswer: boolean = false;
+
+  constructor(private location: Location) { }
 
   ngOnInit() {
   }
 
+  goBack(): void {
+  	this.location.back();
+  }
+
+  showQuestionSection(): void {
+  	this.showQuestion = true;
+  }
+
+  showAnswerSection(): void {
+  	this.showAnswer = true;
+  }
 }

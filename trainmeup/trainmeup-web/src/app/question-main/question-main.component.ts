@@ -1,6 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
 
+export class QuestionState {
+	categoryType: string;
+  	categoryNewText: string;
+  	categoryNewPath: string;
+  	categorySelectPath: string;
+  	questionText: string;
+  	answerType: string;
+  	answerSingleText: string;
+  	answerMultiOp1Text: string;
+  	answerMultiOp2Text: string;
+  	answerMultiOp3Text: string;
+}
+
 @Injectable({
   providedIn: 'root',
 })
@@ -11,7 +24,7 @@ import { Injectable } from '@angular/core';
 })
 export class QuestionMainComponent implements OnInit {
 
-  questionState: Object = {
+  questionState: QuestionState = {
   	categoryType: "new",
   	categoryNewText: "",
   	categoryNewPath: "/Root/",

@@ -18,7 +18,7 @@ export class Category {
 })
 export class CategoriesComponent {
 	categories: Category[];
-    currentItem: Object;
+    currentItem: any;
 
     constructor(private questionMain: QuestionMainComponent) {
         this.categories = [{

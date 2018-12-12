@@ -1,25 +1,41 @@
-<h3>Warmup</h3>
 <div>
-	<p>Choose category:</p>
-	Select
-  	<select name="categories">
-  		<option value="volvo">Any</option>
-	    <option value="volvo">Spring</option>
-	    <option value="saab">Java</option>
-	    <option value="fiat">Cloud</option>
-	    <option value="audi">AI</option>
-  	</select><br>
-  	<button type="button">Hit me!</button>
-  	<p>Question:</p>
-  	<textarea name="question" rows="10" cols="60">Enter the new question here.</textarea>
+  <h3>Warmup</h3>
+
+	<!-- Choose category section -->
+  <h4>Choose category:</h4>
+	<ul class="actions">
+    <li><button class="button" (click)="openCategories()" [disabled]="isCategNewDisabled()">See categories</button></li>
+  </ul>
+  <p>Category: <span>/Root/</span></p>
+	<button type="button" (click)="showQuestionSection()">Hit me!</button>
+  <hr>
+
+  <!-- Question section -->
+  <div *ngIf="showQuestion">
+  	<h4>Question:</h4>
+  	<textarea #questionText name="question" rows="6" cols="60" [disabled]="true"></textarea>
   	<br>
-  	<button type="button">See Answer</button><br>
-  	<p>Answer:</p>
-  	<textarea name="answer" rows="10" cols="60">Enter the answer here.</textarea><br>
-  	<p>Result:</p>
-  	<input type="radio" name="result" value="correct" checked>Correct<br>
-  	<input type="radio" name="result" value="incorrect">Incorrect<br>
-  	
-  	<button type="button">Back</button>
-  	<button type="button">Edit</button>
+  	<button type="button" (click)="showAnswerSection()">See Answer</button><br>
+    <hr>
+  </div>
+  <!-- Answer section -->
+  <div *ngIf="showAnswer">
+  	<h4>Answer:</h4>
+  	<textarea #ansSingleText name="answer" rows="6" cols="60" [disabled]="true"></textarea><br>
+  	<p>Your guess was:</p>
+    <div class="4u 12u$(small)">
+      <input #correct id="correct" type="radio" name="result" checked="">
+      <label for="correct">Correct?</label>
+      <input #incorrect id="incorrect" type="radio" name="result">
+      <label for="incorrect">Incorrect?</label>
+    </div>
+  	<hr>
+  </div>
+
+  <ul class="actions">
+    <li><button type="button" class="button default" (click)="goBack()">Cancel</button></li>
+    <li><button type="button" class="button default" >Edit</button></li>
+    <li><button type="button" class="button special">Save</button></li>
+  </ul>
+
 </div>
