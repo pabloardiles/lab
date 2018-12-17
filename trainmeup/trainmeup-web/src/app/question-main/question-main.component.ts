@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
+import { Category } from '../trainmeup.service'
 
 export class QuestionState {
 	categoryType: string;
@@ -12,6 +13,7 @@ export class QuestionState {
   	answerMultiOp1Text: string;
   	answerMultiOp2Text: string;
   	answerMultiOp3Text: string;
+    categoryObj: Category;
 }
 
 @Injectable({
@@ -27,14 +29,15 @@ export class QuestionMainComponent implements OnInit {
   questionState: QuestionState = {
   	categoryType: "new",
   	categoryNewText: "",
-  	categoryNewPath: "/Root/",
-  	categorySelectPath: "/Root/",
+  	categoryNewPath: "",
+  	categorySelectPath: "",
   	questionText: "",
   	answerType: "single",
   	answerSingleText: "",
   	answerMultiOp1Text: "",
   	answerMultiOp2Text: "",
-  	answerMultiOp3Text: ""
+  	answerMultiOp3Text: "",
+    categoryObj: null
   };
   showCategories = false;
 

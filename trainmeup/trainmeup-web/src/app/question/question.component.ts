@@ -1,7 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Location } from '@angular/common';
 import { QuestionMainComponent } from '../question-main/question-main.component';
-import { ElementRef, Renderer2, ViewChild } from '@angular/core';
+import { ElementRef, ViewChild } from '@angular/core';
+import { TrainmeupService, Category } from '../trainmeup.service'
 
 @Component({
   selector: 'app-question',
@@ -51,7 +52,7 @@ export class QuestionComponent implements OnInit {
 
   constructor(private location: Location, 
   			private questionMain: QuestionMainComponent, 
-  			private rd: Renderer2) { 
+  			private trainService: TrainmeupService) { 
 
   }
 
@@ -71,7 +72,6 @@ export class QuestionComponent implements OnInit {
   	this.answerMultiOp2Input.nativeElement.value = this.questionMain.questionState.answerMultiOp2Text;
   	this.answerMultiOp3Input.nativeElement.value = this.questionMain.questionState.answerMultiOp3Text;
 
-  	//this.savedStatus = this.questionMain.newQuestionStatus;
   }
 
   goBack(): void {
@@ -128,4 +128,55 @@ export class QuestionComponent implements OnInit {
   	return !this.answerMultiCheckbox.nativeElement.checked
   }
 
+  saveQuestion(): void {
+  	if (this.questionTextArea.nativeElement.value == '') {
+  		alert('You must enter the question!');
+  		return;
+  	}
+
+  	if (this.answerMultiCheckbox.nativeElement.checked) {
+  		alert('Multi-choice not yet supported!');
+  		return;
+  	}
+
+  	if (this.answerSingleCheckbox.nativeElement.checked 
+  		&& this.answerSingleTextArea.nativeElement.value == '') {
+  		alert('You must enter the answer!');
+  		return;
+  	} 
+
+  	if (this.newCheckbox.nativeElement.checked) {
+  		if (this.categoryPathNewInput.nativeElement.innerText == '') {
+  			alert('You must select a category for the question!');
+  			return;
+  		} else if (this.newInput.nativeElement.value == '') {
+  			alert('You must specify a new category!');
+  			return;
+  		}
+
+  		let newCateg : Category = {
+  			categoryId: this.questionMain.questionState.categoryObj.nextCategoryId,
+		    name: this.newInput.nativeElement.value,
+		    nextQuestionId: this.computeNextQuesionId(this.questionMain.questionState.categoryObj.nextCategoryId),
+		    nextCategoryId: this.computeNextCategoryId(this.questionMain.questionState.categoryObj.nextCategoryId)
+  		};
+  		this.trainService.save(newCateg).subscribe();
+  		//save question..
+  	} else if (this.selectCheckbox.nativeElement.checked) {
+  		if (this.categoryPathSelectInput.nativeElement.innerText == '') {
+  			alert('You must select a category for the question!');
+  			return;
+  		}
+
+  		//save question...
+  	}
+  }
+
+  computeNextQuesionId(catId): string {
+  	return 'q' + catId.substr(1) + '_1';
+  }
+
+  computeNextCategoryId(catId): string {
+  	return catId + '_1';
+  }
 }

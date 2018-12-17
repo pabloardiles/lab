@@ -4,14 +4,20 @@
 		<li><button class="button default" (click)="closeCategories()">Cancel</button></li>
 		<li><button class="button special" (click)="selectCategory()">Select</button></li>
 	</ul>
-	<dx-tree-view
-	    #treeview
-	    [items]="categories"
-	    [width]="500"
-	    [searchEnabled]="false"
-	    searchMode="contains"
-	    (onItemClick)="selectItem($event)">
-	</dx-tree-view>
+	<div class="box">
+		<dx-tree-view
+		    #treeview
+		    [items]="categories"
+		    [width]="500"
+		    [searchEnabled]="false"
+		    searchMode="contains"
+		    displayExpr="name"
+		    itemsExpr="subcategories"
+		    dataStructure="plain"
+		    keyExpr="categoryId"
+		    (onItemClick)="selectItem($event)">
+		</dx-tree-view>
+	</div>
 	<ul class="actions">
 		<li><button class="button default" (click)="closeCategories()">Cancel</button></li>
 		<li><button class="button special" (click)="selectCategory()">Select</button></li>

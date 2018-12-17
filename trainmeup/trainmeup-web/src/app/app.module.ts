@@ -10,6 +10,7 @@ import { CategoriesComponent } from './categories/categories.component';
 
 import { DxTreeViewModule} from 'devextreme-angular';
 import { QuestionMainComponent } from './question-main/question-main.component';
+import { HttpClientModule }    from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { QuestionMainComponent } from './question-main/question-main.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DxTreeViewModule
+    DxTreeViewModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

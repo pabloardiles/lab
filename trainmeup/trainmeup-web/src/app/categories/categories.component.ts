@@ -3,13 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { DxTreeViewModule } from 'devextreme-angular';
 import { QuestionMainComponent } from '../question-main/question-main.component';
-
-export class Category {
-    id: string;
-    text: string;
-    expanded?: boolean;
-    items?: Category[];
-}
+import { TrainmeupService, Category } from '../trainmeup.service'
+import { Observable, of } from 'rxjs';
 
 @Component({
     selector: 'app-categories',
@@ -20,226 +15,25 @@ export class CategoriesComponent {
 	categories: Category[];
     currentItem: any;
 
-    constructor(private questionMain: QuestionMainComponent) {
-        this.categories = [{
-			    id: "1",
-			    text: "Root",
-			    expanded: true,
-			    items: [{
-			        id: "1_1",
-			        text: "Cloud",
-			        items: [{
-			            id: "1_1_1",
-			            text: "Video Players",
-			            items: [{
-			                id: "1_1_1_1",
-			                text: "HD Video Player"
-			            }, {
-			                id: "1_1_1_2",
-			                text: "SuperHD Video Player"
-			            }]
-			        }, {
-			            id: "1_1_2",
-			            text: "Televisions",
-			            items: [{
-			                id: "1_1_2_1",
-			                text: "SuperLCD 42"
-			            }, {
-			                id: "1_1_2_2",
-			                text: "SuperLED 42"
-			            }, {
-			                id: "1_1_2_3",
-			                text: "SuperLED 50"
-			            }, {
-			                id: "1_1_2_4",
-			                text: "SuperLCD 55"
-			            }, {
-			                id: "1_1_2_5",
-			                text: "SuperLCD 70"
-			            }]
-			        }, {
-			            id: "1_1_3",
-			            text: "Monitors",
-			            items: [{
-			                id: "1_1_3_1",
-			                text: "19\"",
-			                items: [{
-			                    id: "1_1_3_1_1",
-			                    text: "DesktopLCD 19"
-			                }]
-			            }, {
-			                id: "1_1_3_2",
-			                text: "21\"",
-			                items: [{
-			                    id: "1_1_3_2_1",
-			                    text: "DesktopLCD 21"
-			                }, {
-			                    id: "1_1_3_2_2",
-			                    text: "DesktopLED 21"
-			                }]
-			            }]
-			        }, {
-			            id: "1_1_4",
-			            text: "Projectors",
-			            items: [{
-			                id: "1_1_4_1",
-			                text: "Projector Plus"
-			            }, {
-			                id: "1_1_4_2",
-			                text: "Projector PlusHD"
-			            }]
-			        }]
+    constructor(private questionMain: QuestionMainComponent, private trainService: TrainmeupService) {}
 
-			    }, {
-			        id: "1_2",
-			        text: "Backend",
-			        items: [{
-			            id: "1_2_1",
-			            text: "Video Players",
-			            items: [{
-			                id: "1_2_1_1",
-			                text: "HD Video Player"
-			            }, {
-			                id: "1_2_1_2",
-			                text: "SuperHD Video Player"
-			            }]
-			        }, {
-			            id: "1_2_2",
-			            text: "Televisions",
-			            items: [{
-			                id: "1_2_2_1",
-			                text: "SuperPlasma 50"
-			            }, {
-			                id: "1_2_2_2",
-			                text: "SuperPlasma 65"
-			            }]
-			        }, {
-			            id: "1_2_3",
-			            text: "Monitors",
-			            items: [{
-			                id: "1_2_3_1",
-			                text: "19\"",
-			                items: [{
-			                    id: "1_2_3_1_1",
-			                    text: "DesktopLCD 19"
-			                }]
-			            }, {
-			                id: "1_2_3_2",
-			                text: "21\"",
-			                items: [{
-			                    id: "1_2_3_2_1",
-			                    text: "DesktopLCD 21"
-			                }, {
-			                    id: "1_2_3_2_2",
-			                    text: "DesktopLED 21"
-			                }]
-			            }]
-			        }]
+	ngOnInit() {
+	  this.trainService.getCategories().subscribe((data: Category[])=> {
+	  	this.categories = data;
+	  	this.updateParent(this.categories);
+	  	this.currentItem = this.categories[0];
+	  });
+	}
 
-			    }, {
-			        id: "1_3",
-			        text: "AI",
-			        items: [{
-			            id: "1_3_1",
-			            text: "Video Players",
-			            items: [{
-			                id: "1_3_1_1",
-			                text: "HD Video Player"
-			            }, {
-			                id: "1_3_1_2",
-			                text: "SuperHD Video Player"
-			            }]
-			        }, {
-			            id: "1_3_3",
-			            text: "Monitors",
-			            items: [{
-			                id: "1_3_3_1",
-			                text: "19\"",
-			                items: [{
-			                    id: "1_3_3_1_1",
-			                    text: "DesktopLCD 19"
-			                }]
-			            }, {
-			                id: "1_3_3_2",
-			                text: "21\"",
-			                items: [{
-			                    id: "1_3_3_2_1",
-			                    text: "DesktopLCD 21"
-			                }]
-			            }]
-			        }]
-			    }, {
-			        id: "1_4",
-			        text: "Agile",
-			        items: [{
-			            id: "1_4_1",
-			            text: "Video Players",
-			            items: [{
-			                id: "1_4_1_1",
-			                text: "HD Video Player"
-			            }, {
-			                id: "1_4_1_2",
-			                text: "SuperHD Video Player"
-			            }]
-			        }, {
-			            id: "1_4_2",
-			            text: "Televisions",
-			            items: [{
-			                id: "1_4_2_1",
-			                text: "SuperLCD 42"
-			            }, {
-			                id: "1_4_2_2",
-			                text: "SuperLED 42"
-			            }, {
-			                id: "1_4_2_3",
-			                text: "SuperLED 50"
-			            }, {
-			                id: "1_4_2_4",
-			                text: "SuperLCD 55"
-			            }, {
-			                id: "1_4_2_5",
-			                text: "SuperLCD 70"
-			            }, {
-			                id: "1_4_2_6",
-			                text: "SuperPlasma 50"
-			            }]
-			        }, {
-			            id: "1_4_3",
-			            text: "Monitors",
-			            items: [{
-			                id: "1_4_3_1",
-			                text: "19\"",
-			                items: [{
-			                    id: "1_4_3_1_1",
-			                    text: "DesktopLCD 19"
-			                }]
-			            }, {
-			                id: "1_4_3_2",
-			                text: "21\"",
-			                items: [{
-			                    id: "1_4_3_2_1",
-			                    text: "DesktopLCD 21"
-			                }, {
-			                    id: "1_4_3_2_2",
-			                    text: "DesktopLED 21"
-			                }]
-			            }]
-			        }, {
-			            id: "1_4_4",
-			            text: "Projectors",
-			            items: [{
-			                id: "1_4_4_1",
-			                text: "Projector Plus"
-			            }, {
-			                id: "1_4_4_2",
-			                text: "Projector PlusHD"
-			            }]
-			        }]
-
-			    }]
-			}];
-        this.currentItem = this.categories[0];
-    }
+	private updateParent(categories): void {
+		for (let categ of categories) {
+			if (! (categ.name == 'Root')) {
+				categ.parentId = categ.categoryId.substring(0, categ.categoryId.lastIndexOf('_'));
+			} else {
+				categ.expanded = true;
+			}
+		}
+	}
 
     selectItem(e) {
         this.currentItem = e.node;
@@ -250,8 +44,8 @@ export class CategoriesComponent {
   	}
 
   	selectCategory(): void {
-  		var path = "";
-  		var tmpNode = this.currentItem;
+  		let path = "";
+  		let tmpNode = this.currentItem;
   		while(tmpNode.text != "Root") {
   			path = tmpNode.text + "/" + path;
   			tmpNode = tmpNode.parent;
@@ -262,7 +56,7 @@ export class CategoriesComponent {
   		} else if (this.questionMain.questionState.categoryType == 'select') {
   			this.questionMain.questionState.categorySelectPath = path;
   		}
-  		
+  		this.questionMain.questionState.categoryObj = this.currentItem.itemData;
     	this.closeCategories();
   	}
 }
