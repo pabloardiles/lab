@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
@@ -59,7 +60,7 @@ public class TrainmeupController {
         question.setQuestion(questionRequest.getQuestion());
         question.setAnswer(questionRequest.getAnswer());
         question.setAttempts(0);
-        question.setRank(Question.Rank.UNTAKEN);
+        question.setRank(Question.Rank.NOT_TAKEN);
         question.setCreateDate(LocalDate.now());
         question.setUpdateDate(LocalDate.now());
 
@@ -77,6 +78,38 @@ public class TrainmeupController {
         List<Question> list = this.questionRepository.findByQuestionIdLike(prefix);
         int index = (int)(Math.random() * list.size());
         return  list.get(index);
+    }
+
+    @CrossOrigin(origins = CORS_URL)
+    @RequestMapping(value = "/question/score", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+    public void hit(@Valid @RequestParam String questionId, @Valid @RequestParam String guessResult) {
+
+        Optional<Question> q = this.questionRepository.findByQuestionId(questionId);
+        if (guessResult.equalsIgnoreCase("correct")) {
+            q.get().setRank(Question.Rank.promote(q.get().getRank()));
+            this.questionRepository.save(q.get());
+            // audit
+        } else if (guessResult.equalsIgnoreCase("incorrect")) {
+            q.get().setRank(Question.Rank.downgrade(q.get().getRank()));
+            this.questionRepository.save(q.get());
+            // audit
+        } else if (guessResult.equalsIgnoreCase("partial")) {
+            //just audit
+        }
+    }
+
+    @CrossOrigin(origins = CORS_URL)
+    @RequestMapping(value = "/path", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public String path(@Valid @RequestParam String categoryId) {
+
+        String path = "";
+        Category c = this.categoryRepository.findByCategoryId(categoryId);
+        while(c.getParentId() != null) {
+            path = c.getName() + "/" + path;
+            c = this.categoryRepository.findByCategoryId(c.getParentId());
+        }
+        path = "/" + c.getName() + "/" + path;
+        return "{\"path\":\"" + path + "\"}";
     }
 
     private String computeNextCategoryId(String categoryId) {

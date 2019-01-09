@@ -7,7 +7,7 @@ import java.time.LocalDate;
 public class Question {
 
     public enum Rank {
-        UNTAKEN(1),
+        NOT_TAKEN(1),
         ROOKIE(2),
         BEGINNER(3),
         SEASONED(4),
@@ -18,6 +18,30 @@ public class Question {
 
         Rank(int rid) {
             id = rid;
+        }
+
+        public static Rank promote(Rank rank) {
+            switch(rank) {
+                case NOT_TAKEN: return ROOKIE;
+                case ROOKIE: return BEGINNER;
+                case BEGINNER: return SEASONED;
+                case SEASONED: return PROFICIENT;
+                case PROFICIENT: return EXPERT;
+                case EXPERT: return EXPERT;
+            }
+            return NOT_TAKEN;
+        }
+
+        public static Rank downgrade(Rank rank) {
+            switch(rank) {
+                case NOT_TAKEN: return NOT_TAKEN;
+                case ROOKIE: return ROOKIE;
+                case BEGINNER: return ROOKIE;
+                case SEASONED: return BEGINNER;
+                case PROFICIENT: return SEASONED;
+                case EXPERT: return PROFICIENT;
+            }
+            return NOT_TAKEN;
         }
     }
 
