@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable, throwError, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
@@ -11,6 +11,18 @@ export class Category {
     nextQuestionId: string;
     nextCategoryId: string;
     expanded?: boolean;
+}
+
+export class Question {
+   id?: string;
+   questionId: string;
+   question: string;
+   answer: string;
+   parentId: string;
+   createDate: string;
+   updateDate: string;
+   rank: string;
+   attempts: number;
 }
 
 const httpOptions = {
@@ -33,6 +45,10 @@ export class TrainmeupService {
 		return this.http.post<Category>('http://localhost:8081/api/category', category, httpOptions);
 	}
 
+	hit(categId): Observable<Question> {
+		let options = { params: new HttpParams().set('categoryId', categId) };
+		return this.http.get<Question>('http://localhost:8081/api/question/hit', options);
+	}
 	/*private handleError(error: HttpErrorResponse) {
 		console.log(error);
 		return throwError('Something bad happened; please try again later.');
