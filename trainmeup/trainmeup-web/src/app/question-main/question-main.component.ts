@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { Category } from '../trainmeup.service'
-
+import { TrainmeupMain } from '../trainmeup-main'
 export class QuestionState {
 	categoryType: string;
   	categoryNewText: string;
@@ -24,7 +24,7 @@ export class QuestionState {
   templateUrl: './question-main.component.html',
   styleUrls: ['./question-main.component.css']
 })
-export class QuestionMainComponent implements OnInit {
+export class QuestionMainComponent extends TrainmeupMain implements OnInit {
 
   questionState: QuestionState = {
   	categoryType: "new",
@@ -39,18 +39,25 @@ export class QuestionMainComponent implements OnInit {
   	answerMultiOp3Text: "",
     categoryObj: null
   };
-  showCategories = false;
 
-  constructor() { }
+  constructor() { super(); }
 
   ngOnInit() {
-  }
-
-  setCategoriesShown(catShown) : void {
-  	this.showCategories = catShown;
   }
 
   saveQuestionStatus(savedStatus): void {
   	this.questionState = savedStatus;
   }
+
+  setSelectedCategory(category, categoryPath) : void {
+    if (this.questionState.categoryType == 'new') {
+      this.questionState.categoryNewPath = categoryPath;
+      this.questionState.categorySelectPath = '';
+    } else if (this.questionState.categoryType == 'select') {
+      this.questionState.categorySelectPath = categoryPath;
+      this.questionState.categoryNewPath = '';
+    }
+    this.questionState.categoryObj = category;
+  }
+    
 }

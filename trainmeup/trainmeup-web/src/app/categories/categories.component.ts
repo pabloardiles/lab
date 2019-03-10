@@ -1,10 +1,12 @@
-import { NgModule, Component } from '@angular/core';
+import { NgModule, Component, Input } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { DxTreeViewModule } from 'devextreme-angular';
-import { QuestionMainComponent } from '../question-main/question-main.component';
+import { TrainmeupMain } from '../trainmeup-main';
 import { TrainmeupService, Category } from '../trainmeup.service'
 import { Observable, of } from 'rxjs';
+
+const rootItem = "All";
 
 @Component({
     selector: 'app-categories',
@@ -12,10 +14,15 @@ import { Observable, of } from 'rxjs';
     styleUrls: ['./categories.component.css']
 })
 export class CategoriesComponent {
+	
 	categories: Category[];
-    currentItem: any;
+  currentItem: any;
 
-    constructor(private questionMain: QuestionMainComponent, private trainService: TrainmeupService) {}
+  @Input() screenCaller: TrainmeupMain;
+
+  constructor(private trainService: TrainmeupService) {
+    
+  }
 
 	ngOnInit() {
 	  this.trainService.getCategories().subscribe((data: Category[])=> {
@@ -27,7 +34,7 @@ export class CategoriesComponent {
 
 	private updateParent(categories): void {
 		for (let categ of categories) {
-			if (! (categ.name == 'Root')) {
+			if (! (categ.name == rootItem)) {
 				categ.parentId = categ.categoryId.substring(0, categ.categoryId.lastIndexOf('_'));
 			} else {
 				categ.expanded = true;
@@ -35,29 +42,25 @@ export class CategoriesComponent {
 		}
 	}
 
-    selectItem(e) {
-        this.currentItem = e.node;
-    }
+  selectItem(e) {
+      this.currentItem = e.node;
+  }
 
 	closeCategories(): void {
-    	this.questionMain.setCategoriesShown(false);
-  	}
+    	this.screenCaller.setCategoriesShown(false);
+  }
 
-  	selectCategory(): void {
-  		let path = "";
-  		let tmpNode = this.currentItem;
-  		while(tmpNode.text != "Root") {
-  			path = tmpNode.text + "/" + path;
-  			tmpNode = tmpNode.parent;
-  		}
-  		path = "/Root/" + path;
-  		if (this.questionMain.questionState.categoryType == 'new') {
-  			this.questionMain.questionState.categoryNewPath = path;
-  		} else if (this.questionMain.questionState.categoryType == 'select') {
-  			this.questionMain.questionState.categorySelectPath = path;
-  		}
-  		this.questionMain.questionState.categoryObj = this.currentItem.itemData;
-    	this.closeCategories();
-  	}
+	selectCategory(): void {
+		let path = "";
+		let tmpNode = this.currentItem;
+		while(tmpNode.text != rootItem) {
+			path = tmpNode.text + "/" + path;
+			tmpNode = tmpNode.parent;
+		}
+		path = "/" + rootItem + "/" + path;
+
+		this.screenCaller.setSelectedCategory(this.currentItem.itemData, path);
+  	this.closeCategories();
+	}
 }
 

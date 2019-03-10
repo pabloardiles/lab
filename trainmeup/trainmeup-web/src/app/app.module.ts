@@ -10,6 +10,7 @@ import { CategoriesComponent } from './categories/categories.component';
 
 import { DxTreeViewModule} from 'devextreme-angular';
 import { QuestionMainComponent } from './question-main/question-main.component';
+import { AnswerMainComponent } from './answer-main/answer-main.component';
 import { HttpClientModule }    from '@angular/common/http';
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HttpClientModule }    from '@angular/common/http';
     QuestionComponent,
     AnswerComponent,
     CategoriesComponent,
-    QuestionMainComponent
+    QuestionMainComponent,
+    AnswerMainComponent
   ],
   imports: [
     BrowserModule,

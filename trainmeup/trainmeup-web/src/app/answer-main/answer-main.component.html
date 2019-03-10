@@ -1,5 +1,5 @@
 
 <div [ngSwitch]="showCategories">
-  <app-question *ngSwitchCase="false"></app-question>
+  <app-answer *ngSwitchCase="false"></app-answer>
   <app-categories *ngSwitchCase="true" [screenCaller]="caller"></app-categories>
 </div>

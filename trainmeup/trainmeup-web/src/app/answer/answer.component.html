@@ -4,9 +4,9 @@
 	<!-- Choose category section -->
   <h4>Choose category:</h4>
 	<ul class="actions">
-    <li><button class="button" (click)="openCategories()" [disabled]="isCategNewDisabled()">See categories</button></li>
+    <li><button class="button" (click)="openCategories()">See categories</button></li>
   </ul>
-  <p>Category: <span>/Root/</span></p>
+  <p>Category: <span #categPath></span></p>
 	<button type="button" (click)="showQuestionSection()">Hit me!</button>
   <hr>
 

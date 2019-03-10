@@ -1,7 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ElementRef, ViewChild } from '@angular/core';
 import { Location } from '@angular/common';
 import { QuestionMainComponent } from '../question-main/question-main.component';
-import { ElementRef, ViewChild } from '@angular/core';
 import { TrainmeupService, Category } from '../trainmeup.service'
 
 @Component({
