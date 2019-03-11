@@ -35,7 +35,7 @@ public class TrainmeupController {
 
     @CrossOrigin(origins = CORS_URL)
     @RequestMapping(value = "/category", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public void saveCategory(@Valid @RequestBody CategoryRequest categoryRequest) {
+    public Category saveCategory(@Valid @RequestBody CategoryRequest categoryRequest) {
         Category parent = this.categoryRepository.findByCategoryId(categoryRequest.getCategoryParentId());
         Category category = new Category();
         category.setCategoryId(parent.getNextCategoryId());
@@ -47,7 +47,7 @@ public class TrainmeupController {
         parent.setNextCategoryId(computeNextCategoryId(parent.getNextCategoryId()));
 
         this.categoryRepository.save(parent);
-        this.categoryRepository.save(category);
+        return this.categoryRepository.save(category);
     }
 
     @CrossOrigin(origins = CORS_URL)
@@ -82,20 +82,28 @@ public class TrainmeupController {
 
     @CrossOrigin(origins = CORS_URL)
     @RequestMapping(value = "/question/score", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
-    public void hit(@Valid @RequestParam String questionId, @Valid @RequestParam String guessResult) {
+    public Question score(@Valid @RequestParam String questionId, @Valid @RequestParam String guessResult) {
 
         Optional<Question> q = this.questionRepository.findByQuestionId(questionId);
+        q.get().setAttempts(q.get().getAttempts()+1);
+        q.get().setUpdateDate(LocalDate.now());
         if (guessResult.equalsIgnoreCase("correct")) {
             q.get().setRank(Question.Rank.promote(q.get().getRank()));
-            this.questionRepository.save(q.get());
+            return this.questionRepository.save(q.get());
             // audit
         } else if (guessResult.equalsIgnoreCase("incorrect")) {
-            q.get().setRank(Question.Rank.downgrade(q.get().getRank()));
-            this.questionRepository.save(q.get());
+            if (Question.Rank.NOT_TAKEN.equals(q.get().getRank())) {
+                // move to rookie anyways
+                q.get().setRank(Question.Rank.promote(q.get().getRank()));
+            } else {
+                q.get().setRank(Question.Rank.downgrade(q.get().getRank()));
+            }
+            return this.questionRepository.save(q.get());
             // audit
         } else if (guessResult.equalsIgnoreCase("partial")) {
             //just audit
         }
+        return q.get();
     }
 
     @CrossOrigin(origins = CORS_URL)
