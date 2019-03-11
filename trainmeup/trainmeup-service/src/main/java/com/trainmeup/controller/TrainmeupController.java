@@ -52,7 +52,7 @@ public class TrainmeupController {
 
     @CrossOrigin(origins = CORS_URL)
     @RequestMapping(value = "/question", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public void saveQuestion(@Valid @RequestBody QuestionRequest questionRequest) {
+    public Question saveQuestion(@Valid @RequestBody QuestionRequest questionRequest) {
         Category parent = this.categoryRepository.findByCategoryId(questionRequest.getCategoryParentId());
         Question question = new Question();
         question.setQuestionId(parent.getNextQuestionId());
@@ -67,7 +67,7 @@ public class TrainmeupController {
         parent.setNextQuestionId(computeNextQuestionId(parent.getNextQuestionId()));
 
         this.categoryRepository.save(parent);
-        this.questionRepository.save(question);
+        return this.questionRepository.save(question);
     }
 
     @CrossOrigin(origins = CORS_URL)

@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, ElementRef, ViewChild } from '@angular/core';
 import { Location } from '@angular/common';
 import { QuestionMainComponent } from '../question-main/question-main.component';
-import { TrainmeupService, Category } from '../trainmeup.service'
+import { TrainmeupService, Category, Question } from '../trainmeup.service'
 
 @Component({
   selector: 'app-question',
@@ -57,20 +57,7 @@ export class QuestionComponent implements OnInit {
 
   ngOnInit() {
   	// restoring data into component...
-  	this.newCheckbox.nativeElement.checked = this.questionMain.questionState.categoryType == 'new';
-  	this.newInput.nativeElement.value = this.questionMain.questionState.categoryNewText;
-  	this.selectCheckbox.nativeElement.checked = this.questionMain.questionState.categoryType == 'select';
-  	this.categoryPathNewInput.nativeElement.innerText = this.questionMain.questionState.categoryNewPath;
-  	this.categoryPathSelectInput.nativeElement.innerText = this.questionMain.questionState.categorySelectPath;
-
-  	this.questionTextArea.nativeElement.value = this.questionMain.questionState.questionText;
-  	this.answerSingleCheckbox.nativeElement.checked = this.questionMain.questionState.answerType == 'single';
-  	this.answerMultiCheckbox.nativeElement.checked = this.questionMain.questionState.answerType == 'multi';
-  	this.answerSingleTextArea.nativeElement.value = this.questionMain.questionState.answerSingleText;
-  	this.answerMultiOp1Input.nativeElement.value = this.questionMain.questionState.answerMultiOp1Text;
-  	this.answerMultiOp2Input.nativeElement.value = this.questionMain.questionState.answerMultiOp2Text;
-  	this.answerMultiOp3Input.nativeElement.value = this.questionMain.questionState.answerMultiOp3Text;
-
+    this.resetScreen(true);
   }
 
   goBack(): void {
@@ -165,7 +152,10 @@ export class QuestionComponent implements OnInit {
           question: this.questionTextArea.nativeElement.value,
           answer: this.answerSingleTextArea.nativeElement.value
         };
-        this.trainService.saveQuestion(newQuestion).subscribe();
+        this.trainService.saveQuestion(newQuestion).subscribe((data: Question)=>{
+          alert('The new category and the question were saved!');
+          this.resetScreen(false);
+        });
       });
 
   		
@@ -182,8 +172,27 @@ export class QuestionComponent implements OnInit {
         question: this.questionTextArea.nativeElement.value,
         answer: this.answerSingleTextArea.nativeElement.value
       };
-      this.trainService.saveQuestion(newQuestion).subscribe();
+      this.trainService.saveQuestion(newQuestion).subscribe((data: Question)=>{
+          alert('The new question was saved!');
+          this.resetScreen(false);
+        });
   	}
   }
 
+  resetScreen(callbackFromCategories: boolean): void {
+
+    this.newCheckbox.nativeElement.checked = callbackFromCategories ? this.questionMain.questionState.categoryType == 'new' : true;
+    this.newInput.nativeElement.value = callbackFromCategories ? this.questionMain.questionState.categoryNewText : '';
+    this.selectCheckbox.nativeElement.checked = callbackFromCategories ? this.questionMain.questionState.categoryType == 'select' : false;
+    this.categoryPathNewInput.nativeElement.innerText = callbackFromCategories ? this.questionMain.questionState.categoryNewPath : '';
+    this.categoryPathSelectInput.nativeElement.innerText = callbackFromCategories ? this.questionMain.questionState.categorySelectPath : '';
+
+    this.questionTextArea.nativeElement.value = callbackFromCategories ? this.questionMain.questionState.questionText : '';
+    this.answerSingleCheckbox.nativeElement.checked = callbackFromCategories ? this.questionMain.questionState.answerType == 'single' : true;
+    this.answerMultiCheckbox.nativeElement.checked = callbackFromCategories ? this.questionMain.questionState.answerType == 'multi' : false;
+    this.answerSingleTextArea.nativeElement.value = callbackFromCategories ? this.questionMain.questionState.answerSingleText : '';
+    this.answerMultiOp1Input.nativeElement.value = callbackFromCategories ? this.questionMain.questionState.answerMultiOp1Text : '';
+    this.answerMultiOp2Input.nativeElement.value = callbackFromCategories ? this.questionMain.questionState.answerMultiOp2Text : '';
+    this.answerMultiOp3Input.nativeElement.value = callbackFromCategories ? this.questionMain.questionState.answerMultiOp3Text : '';
+  }
 }
