@@ -153,14 +153,23 @@ export class QuestionComponent implements OnInit {
   			return;
   		}
 
-  		let newCateg : Category = {
-  			categoryId: this.questionMain.questionState.categoryObj.nextCategoryId,
-		    name: this.newInput.nativeElement.value,
-		    nextQuestionId: this.computeNextQuesionId(this.questionMain.questionState.categoryObj.nextCategoryId),
-		    nextCategoryId: this.computeNextCategoryId(this.questionMain.questionState.categoryObj.nextCategoryId)
-  		};
-  		this.trainService.save(newCateg).subscribe();
-  		//save question..
+  		//save category...
+      let newCateg = {
+        categoryParentId: this.questionMain.questionState.categoryObj.categoryId, 
+        name: this.newInput.nativeElement.value
+      };
+  		this.trainService.saveCategory(newCateg).subscribe((data: Category) => {
+        //save question..
+        let newQuestion = {
+          categoryParentId: data.categoryId, 
+          question: this.questionTextArea.nativeElement.value,
+          answer: this.answerSingleTextArea.nativeElement.value
+        };
+        this.trainService.saveQuestion(newQuestion).subscribe();
+      });
+
+  		
+
   	} else if (this.selectCheckbox.nativeElement.checked) {
   		if (this.categoryPathSelectInput.nativeElement.innerText == '') {
   			alert('You must select a category for the question!');
@@ -168,14 +177,13 @@ export class QuestionComponent implements OnInit {
   		}
 
   		//save question...
+      let newQuestion = {
+        categoryParentId: this.questionMain.questionState.categoryObj.categoryId, 
+        question: this.questionTextArea.nativeElement.value,
+        answer: this.answerSingleTextArea.nativeElement.value
+      };
+      this.trainService.saveQuestion(newQuestion).subscribe();
   	}
   }
 
-  computeNextQuesionId(catId): string {
-  	return 'q' + catId.substr(1) + '_1';
-  }
-
-  computeNextCategoryId(catId): string {
-  	return catId + '_1';
-  }
 }

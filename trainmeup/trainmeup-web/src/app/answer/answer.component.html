@@ -7,7 +7,7 @@
     <li><button class="button" (click)="openCategories()">See categories</button></li>
   </ul>
   <p>Category: <span #categPath></span></p>
-	<button type="button" (click)="showQuestionSection()">Hit me!</button>
+	<button type="button" (click)="showQuestionSection()" [disabled]="this.categoryPath.nativeElement.innerText == ''">Hit me!</button>
   <hr>
 
   <!-- Question section -->
@@ -34,8 +34,8 @@
 
   <ul class="actions">
     <li><button type="button" class="button default" (click)="goBack()">Cancel</button></li>
-    <li><button type="button" class="button default" >Edit</button></li>
-    <li><button type="button" class="button special">Save</button></li>
+    <li><button type="button" class="button default" [disabled]="true">Edit</button></li>
+    <li><button type="button" class="button special" (click)="saveResult()" [disabled]="!showAnswer">Save result</button></li>
   </ul>
 
 </div>
