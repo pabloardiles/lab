@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable, throwError, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+import { environment } from '../environments/environment';
 
 export class Category {
     id?: string;
@@ -29,34 +30,37 @@ const httpOptions = {
 	  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 	};
 
-
 @Injectable({
   providedIn: 'root'
 })
 export class TrainmeupService {
 
-	constructor(private http: HttpClient) {}
+	private apiURL: string = '';
+
+	constructor(private http: HttpClient) {
+		this.apiURL = environment.tmupApiURL;
+	}
 
 	getCategories(): Observable<Category[]> {
-		return this.http.get<Category[]>('http://localhost:8081/api/category');
+		return this.http.get<Category[]>(this.apiURL + '/api/category');
 	}
 
 	saveCategory(category): Observable<Category> {
-		return this.http.post<Category>('http://localhost:8081/api/category', category, httpOptions);
+		return this.http.post<Category>(this.apiURL + '/api/category', category, httpOptions);
 	}
 
 	saveQuestion(question): Observable<Question> {
-		return this.http.post<Question>('http://localhost:8081/api/question', question, httpOptions);
+		return this.http.post<Question>(this.apiURL + '/api/question', question, httpOptions);
 	}
 
 	hit(categId): Observable<Question> {
 		let options = { params: new HttpParams().set('categoryId', categId) };
-		return this.http.get<Question>('http://localhost:8081/api/question/hit', options);
+		return this.http.get<Question>(this.apiURL + '/api/question/hit', options);
 	}
 
 	score(questionId, result): Observable<Question> {
 		let scoreparam = new HttpParams().set('questionId', questionId).set('guessResult', result);
-		return this.http.put<Question>('http://localhost:8081/api/question/score', scoreparam );
+		return this.http.put<Question>(this.apiURL + '/api/question/score', scoreparam );
 	}
 	/*private handleError(error: HttpErrorResponse) {
 		console.log(error);
