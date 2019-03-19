@@ -29,6 +29,7 @@ These steps are intended to deploy TrainMeUp app in one single server for the fi
 `unlink default`
 - Create a new symlink
 `ln -s ../sites-available/trainmeup-nginx.conf trainmeup`
-- Run `sh start.sh`
+- Copy start.sh script to server.
+- Run `sudo sh start.sh`
 
 
