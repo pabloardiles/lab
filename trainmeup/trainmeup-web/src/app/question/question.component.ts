@@ -143,7 +143,7 @@ export class QuestionComponent implements OnInit {
   		//save category...
       let newCateg = {
         categoryParentId: this.questionMain.questionState.categoryObj.categoryId, 
-        name: this.newInput.nativeElement.value
+        subpath: this.newInput.nativeElement.value
       };
   		this.trainService.saveCategory(newCateg).subscribe((data: Category) => {
         //save question..
@@ -156,7 +156,9 @@ export class QuestionComponent implements OnInit {
           alert('The new category and the question were saved!');
           this.resetScreen(false);
         });
-      });
+      },
+        error => alert('ERROR: save category has failed.\nCorrect format is either "AAA/" or "AAA/BBB/CCC/"')
+      );
 
   		
 

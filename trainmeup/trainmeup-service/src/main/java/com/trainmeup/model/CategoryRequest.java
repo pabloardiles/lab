@@ -1,9 +1,15 @@
 package com.trainmeup.model;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Pattern;
+
 public class CategoryRequest {
 
+    @NotEmpty
     private String categoryParentId;
-    private String name;
+
+    @Pattern(regexp = "^(\\w(\\w|\\s)*\\w\\/)+$")
+    private String subpath;
 
     public String getCategoryParentId() {
         return categoryParentId;
@@ -13,11 +19,15 @@ public class CategoryRequest {
         this.categoryParentId = categoryParentId;
     }
 
-    public String getName() {
-        return name;
+    public String getSubpath() {
+        return subpath;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setSubpath(String name) {
+        this.subpath = name;
+    }
+
+    public String[] getSubCategoryNames() {
+        return subpath.split("/");
     }
 }

@@ -37,17 +37,21 @@ public class TrainmeupController {
     @RequestMapping(value = "/category", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public Category saveCategory(@Valid @RequestBody CategoryRequest categoryRequest) {
         Category parent = this.categoryRepository.findByCategoryId(categoryRequest.getCategoryParentId());
-        Category category = new Category();
-        category.setCategoryId(parent.getNextCategoryId());
-        category.setName(categoryRequest.getName());
-        category.setNextCategoryId(createNextCategoryId(category.getCategoryId()));
-        category.setNextQuestionId(createNextQuestionId(category.getCategoryId()));
-        category.setParentId(parent.getCategoryId());
 
-        parent.setNextCategoryId(computeNextCategoryId(parent.getNextCategoryId()));
+        for (String name : categoryRequest.getSubCategoryNames()) {
+            Category category = new Category();
+            category.setCategoryId(parent.getNextCategoryId());
+            category.setName(name);
+            category.setNextCategoryId(createNextCategoryId(category.getCategoryId()));
+            category.setNextQuestionId(createNextQuestionId(category.getCategoryId()));
+            category.setParentId(parent.getCategoryId());
 
-        this.categoryRepository.save(parent);
-        return this.categoryRepository.save(category);
+            parent.setNextCategoryId(computeNextCategoryId(parent.getNextCategoryId()));
+
+            this.categoryRepository.save(parent);
+            parent = this.categoryRepository.save(category);
+        }
+        return parent;
     }
 
     @CrossOrigin(origins = CORS_URL)
