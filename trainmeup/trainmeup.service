@@ -1,0 +1,14 @@
+[Unit]
+Description=TrainMeUp service
+After=mongo.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=user
+ExecStart=/usr/bin/java -jar /home/user/trainmeup-service-0.1.0.jar
+
+[Install]
+WantedBy=multi-user.target
