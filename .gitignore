@@ -2,3 +2,4 @@
 target/
 .mvn
 package-lock.json
+trainmeup-service.iml

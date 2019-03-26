@@ -6,6 +6,8 @@ import com.trainmeup.model.Question;
 import com.trainmeup.model.QuestionRequest;
 import com.trainmeup.repository.CategoryRepository;
 import com.trainmeup.repository.QuestionRepository;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +21,8 @@ import java.util.Optional;
 @RequestMapping("/api")
 public class TrainmeupController {
 
+    private static final Logger LOGGER = LogManager.getLogger(TrainmeupController.class);
+
     private static final String CORS_URL = "http://localhost:4200";
 
     @Autowired
@@ -30,12 +34,14 @@ public class TrainmeupController {
     @CrossOrigin(origins = CORS_URL)
     @RequestMapping(value = "/category", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Category> getCategories() {
+        LOGGER.info("Get all categories");
         return this.categoryRepository.findAll();
     }
 
     @CrossOrigin(origins = CORS_URL)
     @RequestMapping(value = "/category", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public Category saveCategory(@Valid @RequestBody CategoryRequest categoryRequest) {
+        LOGGER.info("Saving category '" + categoryRequest.getSubpath() + "'");
         Category parent = this.categoryRepository.findByCategoryId(categoryRequest.getCategoryParentId());
 
         for (String name : categoryRequest.getSubCategoryNames()) {
@@ -57,6 +63,7 @@ public class TrainmeupController {
     @CrossOrigin(origins = CORS_URL)
     @RequestMapping(value = "/question", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public Question saveQuestion(@Valid @RequestBody QuestionRequest questionRequest) {
+        LOGGER.info("Saving question '" + questionRequest.getQuestion() + "'");
         Category parent = this.categoryRepository.findByCategoryId(questionRequest.getCategoryParentId());
         Question question = new Question();
         question.setQuestionId(parent.getNextQuestionId());
@@ -77,7 +84,7 @@ public class TrainmeupController {
     @CrossOrigin(origins = CORS_URL)
     @RequestMapping(value = "/question/hit", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public Question hit(@Valid @RequestParam String categoryId) {
-
+        LOGGER.info("Hit a '" + categoryId + "' question");
         String prefix = "q" + categoryId.substring(1) + "_";
         List<Question> list = this.questionRepository.findByQuestionIdLike(prefix);
         int index = (int)(Math.random() * list.size());
@@ -87,7 +94,7 @@ public class TrainmeupController {
     @CrossOrigin(origins = CORS_URL)
     @RequestMapping(value = "/question/score", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
     public Question score(@Valid @RequestParam String questionId, @Valid @RequestParam String guessResult) {
-
+        LOGGER.info("New score for '" + questionId + "' with result '" + guessResult + "'");
         Optional<Question> q = this.questionRepository.findByQuestionId(questionId);
         q.get().setAttempts(q.get().getAttempts()+1);
         q.get().setUpdateDate(LocalDate.now());
@@ -113,7 +120,7 @@ public class TrainmeupController {
     @CrossOrigin(origins = CORS_URL)
     @RequestMapping(value = "/path", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public String path(@Valid @RequestParam String categoryId) {
-
+        LOGGER.info("Return path for categoryId '" + categoryId + "'");
         String path = "";
         Category c = this.categoryRepository.findByCategoryId(categoryId);
         while(c.getParentId() != null) {
