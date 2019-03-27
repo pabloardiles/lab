@@ -62,6 +62,11 @@ export class TrainmeupService {
 		let scoreparam = new HttpParams().set('questionId', questionId).set('guessResult', result);
 		return this.http.put<Question>(this.apiURL + '/api/question/score', scoreparam );
 	}
+
+	test(): Observable<any> {
+		return this.http.get<any>(this.apiURL + '/api/health');
+	}
+
 	/*private handleError(error: HttpErrorResponse) {
 		console.log(error);
 		return throwError('Something bad happened; please try again later.');

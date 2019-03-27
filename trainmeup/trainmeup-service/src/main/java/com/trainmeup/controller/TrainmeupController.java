@@ -9,9 +9,13 @@ import com.trainmeup.repository.QuestionRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import java.time.LocalDate;
 import java.util.List;
@@ -129,6 +133,28 @@ public class TrainmeupController {
         }
         path = "/" + c.getName() + "/" + path;
         return "{\"path\":\"" + path + "\"}";
+    }
+
+    @CrossOrigin(origins = CORS_URL)
+    @RequestMapping(value = "/health", method = RequestMethod.GET, produces = MediaType.ALL_VALUE)
+    public ResponseEntity<String> health() {
+        LOGGER.info("Check service health");
+        final String message = "{\"message\":\"%s\"}";
+        try {
+            //check database connection
+            Category c = this.categoryRepository.findByCategoryId("c1");
+            if (c == null) {
+                String err = String.format(message, "error");
+                return new ResponseEntity<>(err, HttpStatus.INTERNAL_SERVER_ERROR);
+            }
+            String hty = String.format(message, "healthy");
+            return new ResponseEntity(hty, HttpStatus.OK);
+
+        } catch (Exception e) {
+            LOGGER.error("check health error", e);
+            String err = String.format(message, "error");
+            return new ResponseEntity<>(err, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     private String computeNextCategoryId(String categoryId) {
