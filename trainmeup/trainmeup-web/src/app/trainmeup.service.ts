@@ -64,7 +64,7 @@ export class TrainmeupService {
 	}
 
 	test(): Observable<any> {
-		return this.http.get<any>(this.apiURL + '/api/health');
+		return this.http.post<any>(this.apiURL + '/api/health', httpOptions);
 	}
 
 	/*private handleError(error: HttpErrorResponse) {
