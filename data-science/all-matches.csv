@@ -1,0 +1,313 @@
+ID,Col,DayOfWeek,Date,Time,Col,TeamLocal,RedCardLocal,Col,TeamVisit,RedCardVisit,ScoreTeamLocal,ScoreTeamVisit,HalfTimeScore,Col,Col,Col,Col,Col,Col,Col,Col,Season,Col,Col,Col,Col
+1314416,1,Friday, Aug 10 2018,23:00,895,Velez Sarsfield,0,902,Newells Old Boys,0,2,0,2 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314421,1,Saturday, Aug 11 2018,01:00,4735,Tigre,0,906,San Lorenzo,0,2,2,2 : 2,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314420,1,Saturday, Aug 11 2018,17:15,896,Gimnasia LP,0,907,Argentinos Juniors,0,1,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314425,1,Saturday, Aug 11 2018,19:30,892,Union,0,6145,Aldosivi,0,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314417,1,Saturday, Aug 11 2018,21:45,9310,Patronato de Parana,0,891,Colon,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314418,1,Sunday, Aug 12 2018,00:00,894,Belgrano,0,4736,San Martin San Juan,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314413,1,Sunday, Aug 12 2018,15:00,889,Boca Juniors,0,893,Talleres,0,1,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314424,1,Sunday, Aug 12 2018,17:15,3802,Godoy Cruz,1,901,Estudiantes,0,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314415,1,Sunday, Aug 12 2018,19:30,899,Lanus,0,6147,Defensa y Justicia,0,2,2,2 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314422,1,Sunday, Aug 12 2018,21:45,903,Rosario Central,0,1303,Banfield,0,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314419,1,Monday, Aug 13 2018,00:00,898,Huracan,0,905,River Plate,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314423,1,Tuesday, Aug 14 2018,01:00,6148,Atletico Tucuman,0,890,Racing Club,0,2,2,0 : 2,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314438,1,Friday, Aug 17 2018,23:00,893,Talleres,0,903,Rosario Central,0,0,1,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314435,1,Saturday, Aug 18 2018,01:00,902,Newells Old Boys,1,897,Independiente,0,2,2,1 : 2,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314432,1,Saturday, Aug 18 2018,17:15,6147,Defensa y Justicia,0,6148,Atletico Tucuman,1,1,1,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314436,1,Saturday, Aug 18 2018,19:30,1303,Banfield,0,896,Gimnasia LP,0,1,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314430,1,Saturday, Aug 18 2018,21:45,907,Argentinos Juniors,0,3802,Godoy Cruz,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314426,1,Sunday, Aug 19 2018,00:00,905,River Plate,0,894,Belgrano,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314434,1,Sunday, Aug 19 2018,15:00,4736,San Martin San Juan,0,9310,Patronato de Parana,0,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314437,1,Sunday, Aug 19 2018,17:15,891,Colon,0,4735,Tigre,0,2,2,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314427,1,Sunday, Aug 19 2018,19:30,6145,Aldosivi,0,898,Huracan,0,2,1,0 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314429,1,Sunday, Aug 19 2018,21:45,906,San Lorenzo,0,899,Lanus,0,2,2,2 : 1,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314428,1,Monday, Aug 20 2018,00:00,890,Racing Club,0,895,Velez Sarsfield,0,2,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314431,1,Monday, Aug 20 2018,19:30,901,Estudiantes,0,889,Boca Juniors,0,2,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314433,1,Monday, Aug 20 2018,21:45,5595,San Martin de Tucuman,0,892,Union,0,1,1,1 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314449,1,Friday, Aug 24 2018,23:00,9310,Patronato de Parana,0,890,Racing Club,0,0,3,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314450,1,Friday, Aug 24 2018,23:00,894,Belgrano,0,901,Estudiantes,0,2,1,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314446,1,Saturday, Aug 25 2018,01:15,897,Independiente,0,6147,Defensa y Justicia,0,0,1,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314455,1,Saturday, Aug 25 2018,01:15,6148,Atletico Tucuman,0,891,Colon,0,2,1,1 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314452,1,Saturday, Aug 25 2018,19:30,896,Gimnasia LP,0,893,Talleres,0,0,2,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314453,1,Saturday, Aug 25 2018,21:45,4735,Tigre,0,4736,San Martin San Juan,0,2,2,1 : 1,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314445,1,Sunday, Aug 26 2018,00:00,905,River Plate,0,907,Argentinos Juniors,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314448,1,Sunday, Aug 26 2018,15:00,895,Velez Sarsfield,0,1303,Banfield,0,1,1,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314447,1,Sunday, Aug 26 2018,19:30,899,Lanus,0,6145,Aldosivi,0,0,1,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314454,1,Sunday, Aug 26 2018,21:45,903,Rosario Central,0,5595,San Martin de Tucuman,0,2,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314451,1,Monday, Aug 27 2018,00:00,898,Huracan,0,889,Boca Juniors,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314456,1,Monday, Aug 27 2018,23:00,3802,Godoy Cruz,0,902,Newells Old Boys,0,2,1,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314457,1,Tuesday, Aug 28 2018,01:00,892,Union,0,906,San Lorenzo,0,1,1,0 : 1,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314465,1,Friday, Aug 31 2018,23:00,907,Argentinos Juniors,0,899,Lanus,0,2,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314469,1,Saturday, Sep 1 2018,01:00,4736,San Martin San Juan,1,898,Huracan,0,1,2,1 : 2,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314467,1,Saturday, Sep 1 2018,17:15,6147,Defensa y Justicia,0,894,Belgrano,0,1,1,0 : 1,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314461,1,Saturday, Sep 1 2018,19:30,1303,Banfield,0,9310,Patronato de Parana,0,1,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314463,1,Saturday, Sep 1 2018,21:45,893,Talleres,0,3802,Godoy Cruz,0,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314464,1,Sunday, Sep 2 2018,00:00,906,San Lorenzo,1,905,River Plate,0,1,1,0 : 1,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314460,1,Sunday, Sep 2 2018,15:00,890,Racing Club,0,903,Rosario Central,0,2,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314466,1,Sunday, Sep 2 2018,17:15,901,Estudiantes,0,897,Independiente,1,2,2,2 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314459,1,Sunday, Sep 2 2018,19:30,6145,Aldosivi,0,4735,Tigre,0,0,2,0 : 2,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314462,1,Sunday, Sep 2 2018,21:45,891,Colon,0,892,Union,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314458,1,Monday, Sep 3 2018,00:00,889,Boca Juniors,0,895,Velez Sarsfield,0,3,0,2 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314470,1,Monday, Sep 3 2018,23:00,902,Newells Old Boys,0,6148,Atletico Tucuman,0,1,2,1 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314468,1,Tuesday, Sep 4 2018,01:00,5595,San Martin de Tucuman,0,896,Gimnasia LP,0,1,1,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314473,1,Friday, Sep 14 2018,23:00,901,Estudiantes,0,6145,Aldosivi,0,0,2,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314481,1,Saturday, Sep 15 2018,01:00,6148,Atletico Tucuman,0,4735,Tigre,0,3,0,2 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314478,1,Saturday, Sep 15 2018,17:15,897,Independiente,0,891,Colon,1,3,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314471,1,Saturday, Sep 15 2018,19:30,905,River Plate,0,4736,San Martin San Juan,1,4,1,2 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314476,1,Saturday, Sep 15 2018,21:45,894,Belgrano,0,902,Newells Old Boys,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314472,1,Sunday, Sep 16 2018,00:00,907,Argentinos Juniors,0,889,Boca Juniors,0,0,1,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314475,1,Sunday, Sep 16 2018,15:00,9310,Patronato de Parana,0,896,Gimnasia LP,0,0,2,0 : 2,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314474,1,Sunday, Sep 16 2018,17:15,895,Velez Sarsfield,0,5595,San Martin de Tucuman,0,1,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314483,1,Sunday, Sep 16 2018,19:30,892,Union,0,893,Talleres,1,2,1,1 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314479,1,Sunday, Sep 16 2018,21:45,899,Lanus,0,890,Racing Club,0,0,1,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314482,1,Monday, Sep 17 2018,00:00,3802,Godoy Cruz,0,906,San Lorenzo,0,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314477,1,Monday, Sep 17 2018,23:00,898,Huracan,0,1303,Banfield,0,3,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314480,1,Tuesday, Sep 18 2018,01:00,903,Rosario Central,0,6147,Defensa y Justicia,0,0,1,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314864,1,Friday, Sep 21 2018,23:00,906,San Lorenzo,0,9310,Patronato de Parana,0,3,2,1 : 2,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314872,1,Saturday, Sep 22 2018,01:00,891,Colon,0,3802,Godoy Cruz,0,3,1,2 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314871,1,Saturday, Sep 22 2018,17:15,902,Newells Old Boys,0,899,Lanus,1,2,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314874,1,Saturday, Sep 22 2018,19:30,893,Talleres,0,895,Velez Sarsfield,0,1,1,1 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314868,1,Sunday, Sep 23 2018,00:00,1303,Banfield,0,897,Independiente,1,1,1,1 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314870,1,Sunday, Sep 23 2018,15:00,4735,Tigre,1,898,Huracan,0,0,2,0 : 0,1,0,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314873,1,Sunday, Sep 23 2018,15:00,5595,San Martin de Tucuman,0,907,Argentinos Juniors,0,0,0,0 : 0,0,0,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314875,1,Sunday, Sep 23 2018,17:15,4736,San Martin San Juan,0,6148,Atletico Tucuman,0,1,3,0 : 0,1,0,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314867,1,Sunday, Sep 23 2018,17:15,896,Gimnasia LP,0,903,Rosario Central,0,1,1,0 : 1,1,0,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314863,1,Sunday, Sep 23 2018,21:45,889,Boca Juniors,0,905,River Plate,0,0,2,0 : 1,1,0,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314865,1,Monday, Sep 24 2018,22:00,6145,Aldosivi,0,894,Belgrano,0,2,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314866,1,Tuesday, Sep 25 2018,00:00,890,Racing Club,0,892,Union,0,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314883,1,Friday, Sep 28 2018,22:45,897,Independiente,0,4735,Tigre,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314884,1,Saturday, Sep 29 2018,01:15,899,Lanus,0,905,River Plate,0,1,5,1 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314877,1,Sunday, Sep 30 2018,00:00,907,Argentinos Juniors,0,890,Racing Club,0,0,2,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314880,1,Sunday, Sep 30 2018,17:15,9310,Patronato de Parana,0,893,Talleres,0,2,1,1 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314888,1,Sunday, Sep 30 2018,19:30,892,Union,0,896,Gimnasia LP,0,1,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314881,1,Sunday, Sep 30 2018,21:45,894,Belgrano,1,898,Huracan,0,0,1,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314876,1,Monday, Oct 1 2018,00:00,889,Boca Juniors,0,891,Colon,0,3,1,2 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314887,1,Monday, Oct 1 2018,23:00,3802,Godoy Cruz,1,6147,Defensa y Justicia,0,0,1,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314879,1,Tuesday, Oct 2 2018,01:15,895,Velez Sarsfield,0,6145,Aldosivi,0,2,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314886,1,Tuesday, Oct 2 2018,01:15,5595,San Martin de Tucuman,0,1303,Banfield,1,1,1,1 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314890,1,Saturday, Oct 6 2018,17:15,6145,Aldosivi,1,5595,San Martin de Tucuman,0,2,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314891,1,Saturday, Oct 6 2018,19:30,896,Gimnasia LP,2,3802,Godoy Cruz,0,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314900,1,Saturday, Oct 6 2018,21:45,4736,San Martin San Juan,1,895,Velez Sarsfield,1,3,1,1 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314893,1,Sunday, Oct 7 2018,00:00,9310,Patronato de Parana,0,897,Independiente,0,1,2,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314897,1,Sunday, Oct 7 2018,15:00,1303,Banfield,0,906,San Lorenzo,1,2,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314899,1,Sunday, Oct 7 2018,17:15,6148,Atletico Tucuman,0,899,Lanus,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314898,1,Sunday, Oct 7 2018,19:00,903,Rosario Central,0,892,Union,0,0,4,0 : 2,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314894,1,Sunday, Oct 7 2018,21:00,893,Talleres,0,894,Belgrano,1,3,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314896,1,Sunday, Oct 7 2018,23:00,890,Racing Club,1,889,Boca Juniors,0,2,2,1 : 0,1,1,FT,0,0,1,1,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314892,1,Monday, Oct 8 2018,23:00,4735,Tigre,0,901,Estudiantes,0,1,0,0 : 0,1,1,FT,1,0,1,1,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314901,1,Tuesday, Oct 9 2018,01:00,891,Colon,1,902,Newells Old Boys,0,1,0,1 : 0,1,1,FT,1,0,1,1,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314905,1,Friday, Oct 19 2018,23:00,6147,Defensa y Justicia,0,893,Talleres,0,2,0,2 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314938,1,Friday, Oct 19 2018,23:00,895,Velez Sarsfield,0,896,Gimnasia LP,1,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314906,1,Saturday, Oct 20 2018,01:15,891,Colon,0,905,River Plate,0,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314944,1,Saturday, Oct 20 2018,17:15,3802,Godoy Cruz,0,6145,Aldosivi,0,2,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314935,1,Saturday, Oct 20 2018,19:30,899,Lanus,0,9310,Patronato de Parana,0,3,1,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314902,1,Saturday, Oct 20 2018,21:45,889,Boca Juniors,0,903,Rosario Central,1,0,0,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314908,1,Sunday, Oct 21 2018,00:00,902,Newells Old Boys,0,4735,Tigre,0,2,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314904,1,Sunday, Oct 21 2018,17:15,901,Estudiantes,1,6148,Atletico Tucuman,0,1,1,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314903,1,Sunday, Oct 21 2018,19:30,907,Argentinos Juniors,0,892,Union,0,0,1,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314932,1,Sunday, Oct 21 2018,21:45,897,Independiente,0,898,Huracan,0,3,1,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314941,1,Monday, Oct 22 2018,00:00,5595,San Martin de Tucuman,1,890,Racing Club,0,2,1,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314926,1,Monday, Oct 22 2018,23:00,894,Belgrano,0,1303,Banfield,0,1,1,1 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314929,1,Tuesday, Oct 23 2018,01:00,906,San Lorenzo,0,4736,San Martin San Juan,0,2,1,1 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314878,1,Wednesday, Oct 24 2018,23:30,901,Estudiantes,0,902,Newells Old Boys,1,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314927,1,Friday, Oct 26 2018,23:00,4735,Tigre,0,899,Lanus,0,1,1,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314922,1,Saturday, Oct 27 2018,01:00,898,Huracan,1,891,Colon,0,3,2,0 : 2,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314910,1,Saturday, Oct 27 2018,19:00,905,River Plate,1,6145,Aldosivi,1,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314924,1,Saturday, Oct 27 2018,21:15,896,Gimnasia LP,0,889,Boca Juniors,0,2,1,1 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314920,1,Sunday, Oct 28 2018,00:30,893,Talleres,0,5595,San Martin de Tucuman,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314939,1,Sunday, Oct 28 2018,00:30,892,Union,0,3802,Godoy Cruz,0,0,3,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314912,1,Sunday, Oct 28 2018,14:00,890,Racing Club,0,906,San Lorenzo,0,2,1,0 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314918,1,Sunday, Oct 28 2018,16:15,9310,Patronato de Parana,0,903,Rosario Central,0,2,1,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314916,1,Sunday, Oct 28 2018,18:30,895,Velez Sarsfield,0,894,Belgrano,1,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314914,1,Sunday, Oct 28 2018,20:45,1303,Banfield,0,901,Estudiantes,0,0,2,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314933,1,Sunday, Oct 28 2018,23:00,6148,Atletico Tucuman,0,897,Independiente,1,4,2,2 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314930,1,Monday, Oct 29 2018,22:00,902,Newells Old Boys,0,907,Argentinos Juniors,1,2,0,1 : 0,1,1,FT,1,0,1,1,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314936,1,Tuesday, Oct 30 2018,00:00,4736,San Martin San Juan,0,6147,Defensa y Justicia,0,0,1,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314909,1,Friday, Nov 2 2018,22:00,894,Belgrano,0,896,Gimnasia LP,0,2,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314907,1,Saturday, Nov 3 2018,00:00,892,Union,0,9310,Patronato de Parana,0,2,2,1 : 1,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314945,1,Saturday, Nov 3 2018,16:15,6145,Aldosivi,0,1303,Banfield,0,1,4,0 : 3,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314921,1,Saturday, Nov 3 2018,18:30,3802,Godoy Cruz,1,6148,Atletico Tucuman,0,1,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314915,1,Saturday, Nov 3 2018,20:45,901,Estudiantes,0,905,River Plate,0,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314942,1,Saturday, Nov 3 2018,23:00,889,Boca Juniors,0,4735,Tigre,0,4,1,1 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314913,1,Sunday, Nov 4 2018,14:00,907,Argentinos Juniors,0,897,Independiente,0,0,2,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314923,1,Sunday, Nov 4 2018,16:15,903,Rosario Central,0,891,Colon,0,1,1,0 : 1,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314911,1,Sunday, Nov 4 2018,18:30,906,San Lorenzo,0,893,Talleres,1,0,1,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314948,1,Sunday, Nov 4 2018,20:45,890,Racing Club,0,902,Newells Old Boys,0,1,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314919,1,Sunday, Nov 4 2018,23:00,5595,San Martin de Tucuman,0,4736,San Martin San Juan,0,2,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314917,1,Monday, Nov 5 2018,22:00,6147,Defensa y Justicia,0,895,Velez Sarsfield,0,3,2,2 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314951,1,Tuesday, Nov 6 2018,00:00,899,Lanus,0,898,Huracan,0,0,1,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314414,1,Wednesday, Nov 7 2018,23:15,897,Independiente,0,5595,San Martin de Tucuman,0,4,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314940,1,Friday, Nov 9 2018,22:00,893,Talleres,0,6145,Aldosivi,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315110,1,Saturday, Nov 10 2018,00:00,6148,Atletico Tucuman,0,903,Rosario Central,1,2,1,2 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315112,1,Saturday, Nov 10 2018,23:30,891,Colon,0,901,Estudiantes,0,1,1,1 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314928,1,Sunday, Nov 11 2018,16:15,897,Independiente,1,894,Belgrano,1,2,1,1 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314946,1,Sunday, Nov 11 2018,18:30,896,Gimnasia LP,0,890,Racing Club,0,0,3,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314931,1,Sunday, Nov 11 2018,20:45,1303,Banfield,0,899,Lanus,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314949,1,Monday, Nov 12 2018,20:00,4735,Tigre,1,907,Argentinos Juniors,0,2,1,0 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314943,1,Monday, Nov 12 2018,22:15,898,Huracan,0,3802,Godoy Cruz,0,2,1,2 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314952,1,Monday, Nov 12 2018,22:15,902,Newells Old Boys,0,6147,Defensa y Justicia,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314934,1,Tuesday, Nov 13 2018,00:30,895,Velez Sarsfield,0,906,San Lorenzo,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314937,1,Tuesday, Nov 13 2018,00:30,9310,Patronato de Parana,0,5595,San Martin de Tucuman,0,3,3,3 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315113,1,Saturday, Nov 17 2018,20:10,889,Boca Juniors,0,9310,Patronato de Parana,0,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314882,1,Sunday, Nov 18 2018,20:10,906,San Lorenzo,0,6148,Atletico Tucuman,0,0,2,0 : 2,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314869,1,Sunday, Nov 18 2018,22:20,6147,Defensa y Justicia,0,901,Estudiantes,2,1,1,1 : 1,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315121,1,Wednesday, Nov 21 2018,20:10,896,Gimnasia LP,0,4736,San Martin San Juan,0,0,2,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315118,1,Friday, Nov 23 2018,22:00,894,Belgrano,0,6148,Atletico Tucuman,0,1,3,1 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315120,1,Saturday, Nov 24 2018,00:15,907,Argentinos Juniors,0,893,Talleres,0,0,2,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314953,1,Saturday, Nov 24 2018,00:15,903,Rosario Central,0,901,Estudiantes,1,2,1,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315117,1,Sunday, Nov 25 2018,20:10,892,Union,0,895,Velez Sarsfield,0,0,2,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314947,1,Sunday, Nov 25 2018,22:20,5595,San Martin de Tucuman,0,891,Colon,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315114,1,Sunday, Nov 25 2018,22:20,6145,Aldosivi,0,902,Newells Old Boys,0,1,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315115,1,Monday, Nov 26 2018,00:30,890,Racing Club,0,1303,Banfield,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315122,1,Monday, Nov 26 2018,22:00,6147,Defensa y Justicia,0,4735,Tigre,2,2,1,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315116,1,Tuesday, Nov 27 2018,00:15,899,Lanus,0,897,Independiente,0,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314885,1,Wednesday, Nov 28 2018,00:00,903,Rosario Central,0,4736,San Martin San Juan,0,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314968,1,Friday, Nov 30 2018,22:00,891,Colon,0,894,Belgrano,0,1,1,1 : 1,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314992,1,Saturday, Dec 1 2018,00:15,902,Newells Old Boys,0,9310,Patronato de Parana,0,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314962,1,Saturday, Dec 1 2018,20:10,901,Estudiantes,0,899,Lanus,0,1,1,1 : 1,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314986,1,Saturday, Dec 1 2018,22:20,6148,Atletico Tucuman,1,5595,San Martin de Tucuman,0,2,3,1 : 0,1,1,FT,2,0,1,1,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314980,1,Sunday, Dec 2 2018,00:30,1303,Banfield,0,907,Argentinos Juniors,0,0,1,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314959,1,Sunday, Dec 2 2018,20:10,6145,Aldosivi,0,906,San Lorenzo,0,2,2,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314977,1,Sunday, Dec 2 2018,22:20,897,Independiente,0,889,Boca Juniors,1,0,1,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314956,1,Monday, Dec 3 2018,00:30,905,River Plate,0,896,Gimnasia LP,0,3,1,2 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314965,1,Monday, Dec 3 2018,20:10,4735,Tigre,0,3802,Godoy Cruz,0,1,3,1 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314983,1,Monday, Dec 3 2018,22:20,895,Velez Sarsfield,0,903,Rosario Central,0,2,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314989,1,Monday, Dec 3 2018,22:20,4736,San Martin San Juan,1,892,Union,1,2,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314971,1,Tuesday, Dec 4 2018,00:30,893,Talleres,0,890,Racing Club,0,1,3,0 : 2,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314974,1,Tuesday, Dec 4 2018,00:30,898,Huracan,0,6147,Defensa y Justicia,0,1,1,1 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315025,1,Saturday, Dec 8 2018,00:00,5595,San Martin de Tucuman,1,902,Newells Old Boys,0,0,3,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315013,1,Saturday, Dec 8 2018,20:10,906,San Lorenzo,0,901,Estudiantes,0,1,1,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315031,1,Saturday, Dec 8 2018,20:10,892,Union,0,1303,Banfield,0,0,1,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315019,1,Saturday, Dec 8 2018,22:20,899,Lanus,0,893,Talleres,0,2,1,1 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315004,1,Saturday, Dec 8 2018,22:20,6147,Defensa y Justicia,0,891,Colon,0,3,0,2 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315028,1,Sunday, Dec 9 2018,00:30,3802,Godoy Cruz,0,897,Independiente,0,1,1,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314998,1,Sunday, Dec 9 2018,22:20,907,Argentinos Juniors,0,6145,Aldosivi,1,1,2,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315001,1,Sunday, Dec 9 2018,22:35,896,Gimnasia LP,0,898,Huracan,0,2,2,1 : 1,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315016,1,Monday, Dec 10 2018,00:30,890,Racing Club,0,4736,San Martin San Juan,0,1,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315007,1,Monday, Dec 10 2018,22:00,9310,Patronato de Parana,0,895,Velez Sarsfield,1,3,3,2 : 1,1,1,FT,0,0,1,2,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315010,1,Tuesday, Dec 11 2018,00:15,894,Belgrano,0,4735,Tigre,0,1,2,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314895,1,Friday, Dec 14 2018,00:00,898,Huracan,0,907,Argentinos Juniors,0,0,0,0 : 0,0,1,FT,0,0,1,2,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314889,1,Saturday, Jan 19 2019,23:00,905,River Plate,0,6147,Defensa y Justicia,0,0,1,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315119,1,Sunday, Jan 20 2019,21:00,906,San Lorenzo,1,898,Huracan,0,0,0,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314925,1,Thursday, Jan 24 2019,00:00,905,River Plate,0,892,Union,0,1,2,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315067,1,Friday, Jan 25 2019,22:00,3802,Godoy Cruz,0,899,Lanus,0,0,2,0 : 2,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315058,1,Friday, Jan 25 2019,22:00,1303,Banfield,0,4736,San Martin San Juan,0,1,1,1 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315043,1,Saturday, Jan 26 2019,00:10,6147,Defensa y Justicia,0,906,San Lorenzo,1,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315061,1,Saturday, Jan 26 2019,20:10,4735,Tigre,0,5595,San Martin de Tucuman,0,2,2,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315052,1,Saturday, Jan 26 2019,20:10,898,Huracan,1,903,Rosario Central,1,2,1,2 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315070,1,Saturday, Jan 26 2019,22:20,6148,Atletico Tucuman,0,896,Gimnasia LP,0,4,1,3 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315037,1,Sunday, Jan 27 2019,00:30,6145,Aldosivi,0,890,Racing Club,0,1,3,1 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315049,1,Sunday, Jan 27 2019,20:10,894,Belgrano,0,892,Union,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315055,1,Sunday, Jan 27 2019,20:10,897,Independiente,0,893,Talleres,0,1,1,1 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315034,1,Sunday, Jan 27 2019,22:20,905,River Plate,0,9310,Patronato de Parana,0,1,3,0 : 2,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315046,1,Monday, Jan 28 2019,00:30,902,Newells Old Boys,0,889,Boca Juniors,0,1,1,1 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315064,1,Monday, Jan 28 2019,22:00,891,Colon,0,907,Argentinos Juniors,2,2,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315040,1,Tuesday, Jan 29 2019,00:10,901,Estudiantes,0,895,Velez Sarsfield,0,1,2,1 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314950,1,Thursday, Jan 31 2019,00:00,3802,Godoy Cruz,1,905,River Plate,0,0,4,0 : 2,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315111,1,Friday, Feb 1 2019,00:00,4736,San Martin San Juan,0,889,Boca Juniors,0,0,4,0 : 2,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315079,1,Friday, Feb 1 2019,22:00,896,Gimnasia LP,0,4735,Tigre,0,3,1,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315088,1,Saturday, Feb 2 2019,00:10,893,Talleres,0,1303,Banfield,0,3,1,2 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315101,1,Saturday, Feb 2 2019,00:10,5595,San Martin de Tucuman,0,6147,Defensa y Justicia,0,1,2,1 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315091,1,Saturday, Feb 2 2019,20:10,906,San Lorenzo,0,897,Independiente,1,0,0,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315097,1,Saturday, Feb 2 2019,22:20,899,Lanus,0,891,Colon,0,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315076,1,Saturday, Feb 2 2019,22:20,907,Argentinos Juniors,0,894,Belgrano,1,0,0,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315099,1,Sunday, Feb 3 2019,00:30,903,Rosario Central,0,6145,Aldosivi,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315073,1,Sunday, Feb 3 2019,20:10,889,Boca Juniors,0,3802,Godoy Cruz,0,2,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315105,1,Sunday, Feb 3 2019,20:10,892,Union,0,902,Newells Old Boys,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315094,1,Sunday, Feb 3 2019,22:20,890,Racing Club,0,898,Huracan,2,3,1,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315082,1,Monday, Feb 4 2019,00:30,895,Velez Sarsfield,1,905,River Plate,0,1,2,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315085,1,Monday, Feb 4 2019,22:00,9310,Patronato de Parana,0,6148,Atletico Tucuman,1,3,0,2 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315103,1,Tuesday, Feb 5 2019,00:10,4736,San Martin San Juan,0,901,Estudiantes,0,3,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314969,1,Friday, Feb 8 2019,22:00,4735,Tigre,1,1303,Banfield,0,4,4,3 : 3,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314960,1,Saturday, Feb 9 2019,00:10,898,Huracan,0,895,Velez Sarsfield,1,1,1,0 : 1,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314966,1,Saturday, Feb 9 2019,00:10,899,Lanus,0,896,Gimnasia LP,0,2,0,2 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315108,1,Saturday, Feb 9 2019,20:10,901,Estudiantes,0,9310,Patronato de Parana,1,1,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314963,1,Saturday, Feb 9 2019,22:20,897,Independiente,0,892,Union,0,2,1,1 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314972,1,Saturday, Feb 9 2019,22:20,6148,Atletico Tucuman,0,893,Talleres,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314975,1,Sunday, Feb 10 2019,20:10,3802,Godoy Cruz,0,5595,San Martin de Tucuman,1,3,2,2 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314978,1,Sunday, Feb 10 2019,20:10,902,Newells Old Boys,0,903,Rosario Central,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315106,1,Sunday, Feb 10 2019,22:20,905,River Plate,0,890,Racing Club,1,2,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314957,1,Monday, Feb 11 2019,00:30,894,Belgrano,1,889,Boca Juniors,0,1,1,0 : 1,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315109,1,Monday, Feb 11 2019,22:00,6147,Defensa y Justicia,0,907,Argentinos Juniors,0,2,1,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315107,1,Tuesday, Feb 12 2019,00:10,6145,Aldosivi,0,4736,San Martin San Juan,1,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315022,1,Friday, Feb 15 2019,00:00,903,Rosario Central,0,905,River Plate,0,1,1,0 : 1,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315017,1,Friday, Feb 15 2019,22:00,892,Union,0,6148,Atletico Tucuman,0,3,0,2 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314990,1,Friday, Feb 15 2019,22:00,895,Velez Sarsfield,1,891,Colon,0,1,1,1 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315011,1,Saturday, Feb 16 2019,00:10,5595,San Martin de Tucuman,1,894,Belgrano,1,0,0,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314999,1,Saturday, Feb 16 2019,20:10,906,San Lorenzo,0,902,Newells Old Boys,0,1,1,1 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314993,1,Saturday, Feb 16 2019,22:20,9310,Patronato de Parana,0,6145,Aldosivi,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314987,1,Saturday, Feb 16 2019,22:20,896,Gimnasia LP,0,6147,Defensa y Justicia,0,0,1,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315014,1,Sunday, Feb 17 2019,00:30,4736,San Martin San Juan,0,897,Independiente,1,1,1,0 : 1,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314996,1,Sunday, Feb 17 2019,20:10,893,Talleres,0,898,Huracan,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315008,1,Sunday, Feb 17 2019,20:10,903,Rosario Central,0,4735,Tigre,0,0,2,0 : 2,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314981,1,Sunday, Feb 17 2019,22:20,889,Boca Juniors,0,899,Lanus,0,2,1,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315005,1,Monday, Feb 18 2019,00:30,1303,Banfield,0,905,River Plate,0,1,1,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314984,1,Monday, Feb 18 2019,22:00,907,Argentinos Juniors,0,901,Estudiantes,0,2,1,1 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315002,1,Tuesday, Feb 19 2019,00:10,890,Racing Club,0,3802,Godoy Cruz,0,3,0,2 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314995,1,Thursday, Feb 21 2019,00:00,889,Boca Juniors,0,6148,Atletico Tucuman,0,1,2,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315047,1,Friday, Feb 22 2019,22:00,4735,Tigre,0,9310,Patronato de Parana,0,2,1,1 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315032,1,Saturday, Feb 23 2019,00:10,891,Colon,0,1303,Banfield,0,0,1,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315044,1,Saturday, Feb 23 2019,00:10,899,Lanus,0,903,Rosario Central,0,2,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315038,1,Saturday, Feb 23 2019,20:10,898,Huracan,0,892,Union,0,1,3,0 : 2,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315053,1,Saturday, Feb 23 2019,20:10,3802,Godoy Cruz,1,895,Velez Sarsfield,0,0,2,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315035,1,Saturday, Feb 23 2019,22:20,894,Belgrano,0,906,San Lorenzo,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315041,1,Sunday, Feb 24 2019,00:30,897,Independiente,1,890,Racing Club,0,1,3,1 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315020,1,Sunday, Feb 24 2019,20:10,905,River Plate,0,5595,San Martin de Tucuman,0,2,1,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315026,1,Sunday, Feb 24 2019,22:20,901,Estudiantes,0,893,Talleres,0,0,1,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315050,1,Sunday, Feb 24 2019,22:20,6148,Atletico Tucuman,0,907,Argentinos Juniors,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315029,1,Monday, Feb 25 2019,00:30,6147,Defensa y Justicia,0,889,Boca Juniors,0,0,1,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315023,1,Monday, Feb 25 2019,22:00,6145,Aldosivi,0,896,Gimnasia LP,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315056,1,Tuesday, Feb 26 2019,00:10,902,Newells Old Boys,0,4736,San Martin San Juan,0,3,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315077,1,Friday, Mar 1 2019,22:15,906,San Lorenzo,1,907,Argentinos Juniors,0,2,3,1 : 1,1,1,FT,2,0,1,1,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315095,1,Saturday, Mar 2 2019,00:10,892,Union,1,889,Boca Juniors,0,1,3,1 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315086,1,Saturday, Mar 2 2019,20:10,903,Rosario Central,0,894,Belgrano,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315089,1,Saturday, Mar 2 2019,22:20,5595,San Martin de Tucuman,0,899,Lanus,0,1,2,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315092,1,Saturday, Mar 2 2019,22:20,4736,San Martin San Juan,0,3802,Godoy Cruz,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315059,1,Sunday, Mar 3 2019,00:30,905,River Plate,0,902,Newells Old Boys,0,4,2,3 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315071,1,Sunday, Mar 3 2019,20:10,9310,Patronato de Parana,0,898,Huracan,1,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315074,1,Sunday, Mar 3 2019,20:10,893,Talleres,0,891,Colon,0,2,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315080,1,Sunday, Mar 3 2019,22:20,890,Racing Club,0,901,Estudiantes,0,1,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315065,1,Monday, Mar 4 2019,00:30,896,Gimnasia LP,0,897,Independiente,0,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315083,1,Monday, Mar 4 2019,20:10,1303,Banfield,0,6148,Atletico Tucuman,0,1,2,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315068,1,Monday, Mar 4 2019,22:20,895,Velez Sarsfield,0,4735,Tigre,0,1,2,1 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315062,1,Tuesday, Mar 5 2019,00:30,6145,Aldosivi,0,6147,Defensa y Justicia,0,0,1,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314967,1,Friday, Mar 8 2019,22:00,899,Lanus,0,4736,San Martin San Juan,0,1,1,0 : 1,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314958,1,Saturday, Mar 9 2019,00:10,894,Belgrano,0,9310,Patronato de Parana,1,3,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314976,1,Saturday, Mar 9 2019,20:10,3802,Godoy Cruz,0,903,Rosario Central,1,0,0,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314979,1,Saturday, Mar 9 2019,20:10,902,Newells Old Boys,2,893,Talleres,1,1,2,1 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314955,1,Saturday, Mar 9 2019,22:20,891,Colon,0,890,Racing Club,0,1,1,1 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315098,1,Sunday, Mar 10 2019,00:30,889,Boca Juniors,0,906,San Lorenzo,1,3,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315102,1,Sunday, Mar 10 2019,20:10,901,Estudiantes,1,896,Gimnasia LP,2,1,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314961,1,Sunday, Mar 10 2019,22:20,898,Huracan,0,5595,San Martin de Tucuman,0,1,3,1 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314964,1,Sunday, Mar 10 2019,22:20,897,Independiente,0,6145,Aldosivi,0,2,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314973,1,Monday, Mar 11 2019,00:30,6148,Atletico Tucuman,0,905,River Plate,0,0,1,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314970,1,Monday, Mar 11 2019,22:00,4735,Tigre,0,892,Union,0,2,2,0 : 2,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315104,1,Tuesday, Mar 12 2019,00:10,6147,Defensa y Justicia,0,1303,Banfield,0,3,2,2 : 1,1,1,FT,1,0,1,1,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315100,1,Tuesday, Mar 12 2019,00:10,907,Argentinos Juniors,0,895,Velez Sarsfield,0,0,0,0 : 0,0,1,FT,0,0,1,1,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314988,1,Friday, Mar 15 2019,22:00,896,Gimnasia LP,0,902,Newells Old Boys,0,1,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314985,1,Saturday, Mar 16 2019,00:10,6145,Aldosivi,0,891,Colon,0,3,0,2 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314991,1,Saturday, Mar 16 2019,16:15,895,Velez Sarsfield,0,6148,Atletico Tucuman,0,2,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315018,1,Saturday, Mar 16 2019,18:30,892,Union,0,899,Lanus,0,3,0,2 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315015,1,Saturday, Mar 16 2019,20:45,4736,San Martin San Juan,0,907,Argentinos Juniors,0,2,3,1 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315003,1,Saturday, Mar 16 2019,23:00,890,Racing Club,0,894,Belgrano,0,1,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314994,1,Sunday, Mar 17 2019,14:00,9310,Patronato de Parana,1,6147,Defensa y Justicia,0,2,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314997,1,Sunday, Mar 17 2019,16:15,893,Talleres,2,4735,Tigre,0,1,3,0 : 2,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315009,1,Sunday, Mar 17 2019,18:30,903,Rosario Central,0,906,San Lorenzo,0,0,1,0 : 0,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314982,1,Sunday, Mar 17 2019,20:45,905,River Plate,0,897,Independiente,1,3,0,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315012,1,Sunday, Mar 17 2019,23:00,5595,San Martin de Tucuman,0,889,Boca Juniors,0,1,4,1 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315006,1,Monday, Mar 18 2019,22:00,1303,Banfield,0,3802,Godoy Cruz,0,2,2,1 : 1,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315000,1,Tuesday, Mar 19 2019,00:10,898,Huracan,0,901,Estudiantes,0,0,1,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1314954,1,Saturday, Mar 23 2019,23:00,891,Colon,0,906,San Lorenzo,0,1,1,1 : 1,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315057,1,Friday, Mar 29 2019,22:00,902,Newells Old Boys,0,898,Huracan,0,3,1,2 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315021,1,Saturday, Mar 30 2019,00:10,889,Boca Juniors,0,1303,Banfield,0,2,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315039,1,Saturday, Mar 30 2019,16:15,906,San Lorenzo,0,896,Gimnasia LP,0,1,1,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315054,1,Saturday, Mar 30 2019,18:30,3802,Godoy Cruz,0,9310,Patronato de Parana,0,2,1,0 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315042,1,Saturday, Mar 30 2019,20:45,897,Independiente,0,895,Velez Sarsfield,0,2,1,0 : 1,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315036,1,Saturday, Mar 30 2019,23:00,893,Talleres,0,905,River Plate,1,0,2,0 : 2,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315051,1,Sunday, Mar 31 2019,15:00,6148,Atletico Tucuman,0,6145,Aldosivi,1,1,0,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315045,1,Sunday, Mar 31 2019,17:15,899,Lanus,0,894,Belgrano,1,3,1,1 : 0,1,1,FT,1,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315024,1,Sunday, Mar 31 2019,17:15,907,Argentinos Juniors,0,903,Rosario Central,0,0,2,0 : 1,1,1,FT,2,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315030,1,Sunday, Mar 31 2019,22:10,6147,Defensa y Justicia,0,892,Union,0,1,1,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315048,1,Sunday, Mar 31 2019,22:10,4735,Tigre,0,890,Racing Club,0,1,1,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315027,1,Monday, Apr 1 2019,23:00,901,Estudiantes,0,5595,San Martin de Tucuman,1,1,1,0 : 0,1,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
+1315033,1,Tuesday, Apr 2 2019,01:10,891,Colon,0,4736,San Martin San Juan,0,0,0,0 : 0,0,1,FT,0,0,1,0,0,2018/2019,Primera División,Argentina,Argentina,Argentina
