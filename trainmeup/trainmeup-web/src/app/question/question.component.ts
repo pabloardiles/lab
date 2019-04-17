@@ -46,7 +46,6 @@ export class QuestionComponent implements OnInit {
   @ViewChild("ansMultiText3", {read: ElementRef}) 
   answerMultiOp3Input: ElementRef;
 
-
   @Input() savedStatus: Object;
 
   constructor(private location: Location, 
@@ -97,6 +96,15 @@ export class QuestionComponent implements OnInit {
   		return "multi";
   	}
   }
+
+  toggleDisabledCheckbox(event: MouseEvent) {
+    //this method fixes rendering issue
+    if ((<HTMLInputElement>event.target).id === 'new') {
+      this.selectCheckbox.nativeElement.checked = false;
+    } else if ((<HTMLInputElement>event.target).id === 'select') {
+      this.newCheckbox.nativeElement.checked = false;
+    }
+  } 
 
   isCategNewDisabled(): boolean {
   	return !this.newCheckbox.nativeElement.checked;
@@ -183,12 +191,12 @@ export class QuestionComponent implements OnInit {
 
   resetScreen(callbackFromCategories: boolean): void {
 
-    this.newCheckbox.nativeElement.checked = callbackFromCategories ? this.questionMain.questionState.categoryType == 'new' : true;
-    this.newInput.nativeElement.value = callbackFromCategories ? this.questionMain.questionState.categoryNewText : '';
-    this.selectCheckbox.nativeElement.checked = callbackFromCategories ? this.questionMain.questionState.categoryType == 'select' : false;
-    this.categoryPathNewInput.nativeElement.innerText = callbackFromCategories ? this.questionMain.questionState.categoryNewPath : '';
+    this.selectCheckbox.nativeElement.checked = callbackFromCategories ? this.questionMain.questionState.categoryType == 'select' : true;
     this.categoryPathSelectInput.nativeElement.innerText = callbackFromCategories ? this.questionMain.questionState.categorySelectPath : '';
-
+    this.newCheckbox.nativeElement.checked = callbackFromCategories ? this.questionMain.questionState.categoryType == 'new' : false;
+    this.newInput.nativeElement.value = callbackFromCategories ? this.questionMain.questionState.categoryNewText : '';
+    this.categoryPathNewInput.nativeElement.innerText = callbackFromCategories ? this.questionMain.questionState.categoryNewPath : '';
+    
     this.questionTextArea.nativeElement.value = callbackFromCategories ? this.questionMain.questionState.questionText : '';
     this.answerSingleCheckbox.nativeElement.checked = callbackFromCategories ? this.questionMain.questionState.answerType == 'single' : true;
     this.answerMultiCheckbox.nativeElement.checked = callbackFromCategories ? this.questionMain.questionState.answerType == 'multi' : false;

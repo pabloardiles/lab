@@ -3,8 +3,19 @@
 
 	<!-- Choose category section -->
 	<h4>Choose category:</h4>
+	
 	<div class="4u 12u$(small)">
-		<input #new id="new" type="radio" name="category" checked="">
+		<input #select id="select" type="radio" name="category" (click)="toggleDisabledCheckbox($event)">
+		<label for="select">Select</label>
+	</div>
+	<ul class="actions">
+		<li><button class="button" (click)="openCategories()" [disabled]="isCategSelectDisabled()">Select category</button></li>
+	</ul>
+	Location: <span #categPathSelect></span><br>
+  	
+
+  	<div class="4u 12u$(small)">
+		<input #new id="new" type="radio" name="category" (click)="toggleDisabledCheckbox($event)">
 		<label for="new">New</label>
 	</div>
 	<ul class="actions">
@@ -12,18 +23,8 @@
 	</ul>
 	Location: <span #categPathNew></span>
 	<input #newText type="text" name="newcategory" placeholder="Enter new category (format is either AAA/ or AAA/BBB/CCC/)" [disabled]="isCategNewDisabled()"><br>
-
-
-	<div class="4u 12u$(small)">
-		<input #select id="select" type="radio" name="category">
-		<label for="select">Select</label>
-	</div>
-	<ul class="actions">
-		<li><button class="button" (click)="openCategories()" [disabled]="isCategSelectDisabled()">Select category</button></li>
-	</ul>
-	Location: <span #categPathSelect></span>
-  	<hr>
-
+	
+	<hr>
   	<!-- Question edit section -->
   	<h4>Question:</h4>
   	<textarea #questionText name="question" rows="6" cols="60" placeholder="Enter new question"></textarea>

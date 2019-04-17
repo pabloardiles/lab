@@ -27,7 +27,7 @@ export class QuestionState {
 export class QuestionMainComponent extends TrainmeupMain implements OnInit {
 
   questionState: QuestionState = {
-  	categoryType: "new",
+  	categoryType: "select",
   	categoryNewText: "",
   	categoryNewPath: "",
   	categorySelectPath: "",
