@@ -70,6 +70,13 @@ export class AnswerComponent implements OnInit {
       this.openDialog(["You've tried this question " + data.attempts + " times.",
         "Currently, your level is: " + data.rank], false);
     });
+    this.resetScreen();
+  }
+
+  resetScreen(): void {
+    this.categoryPath.nativeElement.innerText = '';
+    this.showQuestion = false;
+    this.showAnswer = false;
   }
 
   private openDialog(lines: string[], error: boolean) {
