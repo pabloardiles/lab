@@ -22,6 +22,8 @@
   <div *ngIf="showAnswer">
   	<h4>Answer:</h4>
   	<textarea #ansSingleText name="answer" rows="6" cols="60" [disabled]="true" [value]="question.answer"></textarea><br>
+    <h4>Reference:</h4>
+    <textarea #referenceText name="reference" rows="3" cols="60" [disabled]="true" [value]="question.reference"></textarea><br>
   	<p>Your guess was:</p>
     <div class="4u 12u$(small)">
       <input #correct id="correct" type="radio" name="result" checked="">

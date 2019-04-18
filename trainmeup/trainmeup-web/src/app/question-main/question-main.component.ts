@@ -14,6 +14,7 @@ export class QuestionState {
   	answerMultiOp2Text: string;
   	answerMultiOp3Text: string;
     categoryObj: Category;
+    referenceText: string;
 }
 
 @Injectable({
@@ -37,7 +38,8 @@ export class QuestionMainComponent extends TrainmeupMain implements OnInit {
   	answerMultiOp1Text: "",
   	answerMultiOp2Text: "",
   	answerMultiOp3Text: "",
-    categoryObj: null
+    categoryObj: null,
+    referenceText: ""
   };
 
   constructor() { super(); }

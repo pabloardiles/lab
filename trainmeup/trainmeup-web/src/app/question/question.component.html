@@ -7,27 +7,26 @@
 	<div class="4u 12u$(small)">
 		<input #select id="select" type="radio" name="category" (click)="toggleDisabledCheckbox($event)">
 		<label for="select">Select</label>
+		<ul class="actions">
+			<li><button class="button" (click)="openCategories()" [disabled]="isCategSelectDisabled()">Select category</button></li>
+		</ul>
+		Location: <span #categPathSelect></span><br><br>
 	</div>
-	<ul class="actions">
-		<li><button class="button" (click)="openCategories()" [disabled]="isCategSelectDisabled()">Select category</button></li>
-	</ul>
-	Location: <span #categPathSelect></span><br>
-  	
 
   	<div class="4u 12u$(small)">
 		<input #new id="new" type="radio" name="category" (click)="toggleDisabledCheckbox($event)">
 		<label for="new">New</label>
+		<ul class="actions">
+			<li><button class="button" (click)="openCategories()" [disabled]="isCategNewDisabled()">See categories</button></li>
+		</ul>
+		Location: <span #categPathNew></span>
+		<input #newText type="text" name="newcategory" placeholder="Enter new category (format is either AAA/ or AAA/BBB/CCC/)" [disabled]="isCategNewDisabled()"><br>
 	</div>
-	<ul class="actions">
-		<li><button class="button" (click)="openCategories()" [disabled]="isCategNewDisabled()">See categories</button></li>
-	</ul>
-	Location: <span #categPathNew></span>
-	<input #newText type="text" name="newcategory" placeholder="Enter new category (format is either AAA/ or AAA/BBB/CCC/)" [disabled]="isCategNewDisabled()"><br>
 	
 	<hr>
   	<!-- Question edit section -->
   	<h4>Question:</h4>
-  	<textarea #questionText name="question" rows="6" cols="60" placeholder="Enter new question"></textarea>
+  	<textarea #questionText name="question" rows="4" cols="60" placeholder="Enter new question"></textarea>
   	<br>
   	<h4>Answer:</h4>
   	<div class="4u 12u$(small)">
@@ -44,7 +43,9 @@
 	  	<input #ansMultiText2 type="text" name="op2" placeholder="Choice 2" [disabled]="isAnsMultiDisabled()"><br>
 	  	<input #ansMultiText3 type="text" name="op3" placeholder="Choice 3" [disabled]="isAnsMultiDisabled()"><br>
   	</div>
-  	
+  	<h4>Reference:</h4>
+  	<textarea #referenceText name="reference" rows="3" cols="60" placeholder="Enter the reference"></textarea>
+  	<br>
   	<ul class="actions">
 		<li><button type="button" class="button default" (click)="goBack()">Cancel</button></li>
 		<li><button type="button" class="button special" (click)="saveQuestion()">Save</button></li>

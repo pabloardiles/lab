@@ -48,6 +48,9 @@ export class QuestionComponent implements OnInit {
   @ViewChild("ansMultiText3", {read: ElementRef}) 
   answerMultiOp3Input: ElementRef;
 
+  @ViewChild("referenceText", {read: ElementRef}) 
+  referenceTextArea: ElementRef;
+
   @Input() savedStatus: Object;
 
   constructor(private location: Location, 
@@ -68,20 +71,21 @@ export class QuestionComponent implements OnInit {
 
   openCategories(): void {
   	//switching to categories screen, saving current data...
-	var saved: Object = {
-		categoryType: this.getCategoryType(),
-		categoryNewText: '' + this.newInput.nativeElement.value,
-	  	categoryNewPath: this.categoryPathNewInput.nativeElement.innerText,
-	  	categorySelectPath: this.categoryPathSelectInput.nativeElement.innerText,
-	  	questionText: '' + this.questionTextArea.nativeElement.value,
-	  	answerType: this.getAnswerType(),
-	  	answerSingleText: '' + this.answerSingleTextArea.nativeElement.value,
-	  	answerMultiOp1Text: '' + this.answerMultiOp1Input.nativeElement.value,
-	  	answerMultiOp2Text: '' + this.answerMultiOp2Input.nativeElement.value,
-	  	answerMultiOp3Text: '' + this.answerMultiOp3Input.nativeElement.value
-	};
-	this.questionMain.saveQuestionStatus(saved);
-	this.questionMain.setCategoriesShown(true);
+  	var saved: Object = {
+  		categoryType: this.getCategoryType(),
+  		categoryNewText: '' + this.newInput.nativeElement.value,
+    	categoryNewPath: this.categoryPathNewInput.nativeElement.innerText,
+    	categorySelectPath: this.categoryPathSelectInput.nativeElement.innerText,
+    	questionText: '' + this.questionTextArea.nativeElement.value,
+    	answerType: this.getAnswerType(),
+    	answerSingleText: '' + this.answerSingleTextArea.nativeElement.value,
+    	answerMultiOp1Text: '' + this.answerMultiOp1Input.nativeElement.value,
+    	answerMultiOp2Text: '' + this.answerMultiOp2Input.nativeElement.value,
+    	answerMultiOp3Text: '' + this.answerMultiOp3Input.nativeElement.value,
+      referenceText: '' + this.referenceTextArea.nativeElement.value
+  	};
+  	this.questionMain.saveQuestionStatus(saved);
+  	this.questionMain.setCategoriesShown(true);
   }
 
   getCategoryType(): string {
@@ -142,6 +146,11 @@ export class QuestionComponent implements OnInit {
   		return;
   	} 
 
+    if (this.referenceTextArea.nativeElement.value == '') {
+      this.openDialog(['You must enter a reference!'], true);
+      return;
+    }
+
   	if (this.newCheckbox.nativeElement.checked) {
   		if (this.categoryPathNewInput.nativeElement.innerText == '') {
   			this.openDialog(['You must select a category for the question!'], true);
@@ -161,7 +170,8 @@ export class QuestionComponent implements OnInit {
         let newQuestion = {
           categoryParentId: data.categoryId, 
           question: this.questionTextArea.nativeElement.value,
-          answer: this.answerSingleTextArea.nativeElement.value
+          answer: this.answerSingleTextArea.nativeElement.value,
+          reference: this.referenceTextArea.nativeElement.value
         };
         this.trainService.saveQuestion(newQuestion).subscribe((data: Question)=>{
           this.openDialog(['The new category and the question were saved!'], false);
@@ -171,8 +181,6 @@ export class QuestionComponent implements OnInit {
         error => this.openDialog(['ERROR: save category has failed.',
           'Correct format is either "AAA/" or "AAA/BBB/CCC/"'], true)
       );
-
-  		
 
   	} else if (this.selectCheckbox.nativeElement.checked) {
   		if (this.categoryPathSelectInput.nativeElement.innerText == '') {
@@ -184,7 +192,8 @@ export class QuestionComponent implements OnInit {
       let newQuestion = {
         categoryParentId: this.questionMain.questionState.categoryObj.categoryId, 
         question: this.questionTextArea.nativeElement.value,
-        answer: this.answerSingleTextArea.nativeElement.value
+        answer: this.answerSingleTextArea.nativeElement.value,
+        reference: this.referenceTextArea.nativeElement.value
       };
       this.trainService.saveQuestion(newQuestion).subscribe((data: Question)=>{
           this.openDialog(['The new question was saved!'], false);
@@ -208,6 +217,7 @@ export class QuestionComponent implements OnInit {
     this.answerMultiOp1Input.nativeElement.value = callbackFromCategories ? this.questionMain.questionState.answerMultiOp1Text : '';
     this.answerMultiOp2Input.nativeElement.value = callbackFromCategories ? this.questionMain.questionState.answerMultiOp2Text : '';
     this.answerMultiOp3Input.nativeElement.value = callbackFromCategories ? this.questionMain.questionState.answerMultiOp3Text : '';
+    this.referenceTextArea.nativeElement.value = callbackFromCategories ? this.questionMain.questionState.referenceText : '';
   }
 
   private openDialog(lines: string[], error: boolean) {
