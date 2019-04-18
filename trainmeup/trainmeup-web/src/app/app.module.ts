@@ -13,6 +13,10 @@ import { QuestionMainComponent } from './question-main/question-main.component';
 import { AnswerMainComponent } from './answer-main/answer-main.component';
 import { HttpClientModule }    from '@angular/common/http';
 
+import { MatDialogModule, MatCardModule, MatButtonModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DialogComponent } from './dialog/dialog.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,14 +25,20 @@ import { HttpClientModule }    from '@angular/common/http';
     AnswerComponent,
     CategoriesComponent,
     QuestionMainComponent,
-    AnswerMainComponent
+    AnswerMainComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DxTreeViewModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatCardModule,
+    MatButtonModule
   ],
+  entryComponents: [DialogComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -2,6 +2,8 @@ import { Component, OnInit, Input, ElementRef, ViewChild } from '@angular/core';
 import { Location } from '@angular/common';
 import { QuestionMainComponent } from '../question-main/question-main.component';
 import { TrainmeupService, Category, Question } from '../trainmeup.service'
+import { MatDialog, MatDialogConfig } from '@angular/material';
+import { DialogComponent } from '../dialog/dialog.component';
 
 @Component({
   selector: 'app-question',
@@ -50,7 +52,8 @@ export class QuestionComponent implements OnInit {
 
   constructor(private location: Location, 
   			private questionMain: QuestionMainComponent, 
-  			private trainService: TrainmeupService) { 
+  			private trainService: TrainmeupService,
+        private dialog: MatDialog) { 
 
   }
 
@@ -124,27 +127,27 @@ export class QuestionComponent implements OnInit {
 
   saveQuestion(): void {
   	if (this.questionTextArea.nativeElement.value == '') {
-  		alert('You must enter the question!');
+  		this.openDialog(['You must enter the question!'], true);
   		return;
   	}
 
   	if (this.answerMultiCheckbox.nativeElement.checked) {
-  		alert('Multi-choice not yet supported!');
+  		this.openDialog(['Multi-choice not yet supported!'], true);
   		return;
   	}
 
   	if (this.answerSingleCheckbox.nativeElement.checked 
   		&& this.answerSingleTextArea.nativeElement.value == '') {
-  		alert('You must enter the answer!');
+  		this.openDialog(['You must enter the answer!'], true);
   		return;
   	} 
 
   	if (this.newCheckbox.nativeElement.checked) {
   		if (this.categoryPathNewInput.nativeElement.innerText == '') {
-  			alert('You must select a category for the question!');
+  			this.openDialog(['You must select a category for the question!'], true);
   			return;
   		} else if (this.newInput.nativeElement.value == '') {
-  			alert('You must specify a new category!');
+  			this.openDialog(['You must specify a new category!'], true);
   			return;
   		}
 
@@ -161,18 +164,19 @@ export class QuestionComponent implements OnInit {
           answer: this.answerSingleTextArea.nativeElement.value
         };
         this.trainService.saveQuestion(newQuestion).subscribe((data: Question)=>{
-          alert('The new category and the question were saved!');
+          this.openDialog(['The new category and the question were saved!'], false);
           this.resetScreen(false);
         });
       },
-        error => alert('ERROR: save category has failed.\nCorrect format is either "AAA/" or "AAA/BBB/CCC/"')
+        error => this.openDialog(['ERROR: save category has failed.',
+          'Correct format is either "AAA/" or "AAA/BBB/CCC/"'], true)
       );
 
   		
 
   	} else if (this.selectCheckbox.nativeElement.checked) {
   		if (this.categoryPathSelectInput.nativeElement.innerText == '') {
-  			alert('You must select a category for the question!');
+  			this.openDialog(['You must select a category for the question!'], true);
   			return;
   		}
 
@@ -183,7 +187,7 @@ export class QuestionComponent implements OnInit {
         answer: this.answerSingleTextArea.nativeElement.value
       };
       this.trainService.saveQuestion(newQuestion).subscribe((data: Question)=>{
-          alert('The new question was saved!');
+          this.openDialog(['The new question was saved!'], false);
           this.resetScreen(false);
         });
   	}
@@ -204,5 +208,17 @@ export class QuestionComponent implements OnInit {
     this.answerMultiOp1Input.nativeElement.value = callbackFromCategories ? this.questionMain.questionState.answerMultiOp1Text : '';
     this.answerMultiOp2Input.nativeElement.value = callbackFromCategories ? this.questionMain.questionState.answerMultiOp2Text : '';
     this.answerMultiOp3Input.nativeElement.value = callbackFromCategories ? this.questionMain.questionState.answerMultiOp3Text : '';
+  }
+
+  private openDialog(lines: string[], error: boolean) {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = true;
+    dialogConfig.autoFocus = true;
+    dialogConfig.minWidth = '300px';
+    dialogConfig.data = {
+      description: lines,
+      isError: error
+    };
+    this.dialog.open(DialogComponent, dialogConfig);
   }
 }

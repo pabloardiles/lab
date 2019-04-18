@@ -1,0 +1,12 @@
+<h2 *ngIf="!isError" mat-dialog-title><i class="fas fa-info-circle fa-2x"></i><span> Train Me Up</span></h2>
+<h2 *ngIf="isError" mat-dialog-title><i class="fas fa-exclamation-triangle fa-2x" style="color: Tomato;"></i><span> Train Me Up</span></h2>
+<mat-dialog-content>
+  
+  	<div *ngFor="let line of description">{{ line }}<br></div>
+  	<hr>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button mat-primary" (click)="close()">Close</button>
+    <!-- button class="mat-raised-button mat-primary" (click)="save()">Save</button -->
+</mat-dialog-actions>
