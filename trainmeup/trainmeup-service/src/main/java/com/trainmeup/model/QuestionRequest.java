@@ -1,10 +1,17 @@
 package com.trainmeup.model;
 
+import javax.validation.constraints.NotEmpty;
+
 public class QuestionRequest {
 
+    @NotEmpty
     private String categoryParentId;
+    @NotEmpty
     private String question;
+    @NotEmpty
     private String answer;
+    @NotEmpty
+    private String reference;
 
     public String getCategoryParentId() {
         return categoryParentId;
@@ -28,5 +35,13 @@ public class QuestionRequest {
 
     public void setAnswer(String answer) {
         this.answer = answer;
+    }
+
+    public String getReference() {
+        return reference;
+    }
+
+    public void setReference(String reference) {
+        this.reference = reference;
     }
 }

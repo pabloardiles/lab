@@ -67,6 +67,7 @@ public class TrainmeupController {
         question.setParentId(parent.getCategoryId());
         question.setQuestion(questionRequest.getQuestion());
         question.setAnswer(questionRequest.getAnswer());
+        question.setReference(questionRequest.getReference());
         question.setAttempts(0);
         question.setRank(Question.Rank.NOT_TAKEN);
         question.setCreateDate(LocalDate.now());

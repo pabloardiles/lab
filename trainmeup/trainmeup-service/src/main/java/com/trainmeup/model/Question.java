@@ -49,6 +49,7 @@ public class Question {
     private String questionId;
     private String question;
     private String answer;
+    private String reference;
     private String parentId;
     private LocalDate createDate;
     private LocalDate updateDate;
@@ -125,5 +126,13 @@ public class Question {
 
     public void setRank(Rank rank) {
         this.rank = rank;
+    }
+
+    public String getReference() {
+        return reference;
+    }
+
+    public void setReference(String reference) {
+        this.reference = reference;
     }
 }
