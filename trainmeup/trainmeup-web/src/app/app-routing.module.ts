@@ -10,7 +10,7 @@ import { AnswerComponent }      from './answer/answer.component';
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'answer', component: AnswerMainComponent },
+  { path: 'warmup', component: AnswerMainComponent },
   { path: 'newquestion', component: QuestionMainComponent }
 ];
 
