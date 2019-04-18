@@ -20,6 +20,8 @@
   </div>
   <!-- Answer section -->
   <div *ngIf="showAnswer">
+    <h4>Question category:</h4>
+    <span>{{ questionPath }}</span><br><br>
   	<h4>Answer:</h4>
   	<textarea #ansSingleText name="answer" rows="6" cols="60" [disabled]="true" [value]="question.answer"></textarea><br>
     <h4>Reference:</h4>

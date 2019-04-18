@@ -67,6 +67,11 @@ export class TrainmeupService {
 		return this.http.post<any>(this.apiURL + '/api/health', httpOptions);
 	}
 
+	getPath(categoryId: string): Observable<any> {
+		let param = { params: new HttpParams().set('categoryId', categoryId) };
+		return this.http.get<any>(this.apiURL + '/api/path', param);
+	}
+
 	/*private handleError(error: HttpErrorResponse) {
 		console.log(error);
 		return throwError('Something bad happened; please try again later.');

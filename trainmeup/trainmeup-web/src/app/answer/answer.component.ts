@@ -15,6 +15,7 @@ export class AnswerComponent implements OnInit {
   showQuestion: boolean = false;
   showAnswer: boolean = false;
   private question: Question;
+  private questionPath: string = "";
 
   @ViewChild("categPath", {read: ElementRef}) 
   categoryPath: ElementRef;
@@ -51,6 +52,10 @@ export class AnswerComponent implements OnInit {
     this.trainService.hit(this.answerMain.answerState.categoryObj.categoryId).subscribe((data: Question)=> {
       this.question = data;
       this.questionTextArea.nativeElement.value = data.question;
+      let cId = 'c' + this.question.questionId.substring(1, this.question.questionId.lastIndexOf('_'));
+      this.trainService.getPath(cId).subscribe((data: any) => {
+        this.questionPath = data.path;
+      });
     });
   	this.showQuestion = true;
   }
