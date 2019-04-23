@@ -9,4 +9,4 @@ The chosen approach was to provision an OpenVPN server instance following this [
 
 The basic network topology to integrate OpenVPN:
 
-[Network topology](https://github.com/pabloardiles/lab/blob/master/openvpn-poc/openvpn-vpc.png)
+![Network topology](https://github.com/pabloardiles/lab/blob/master/openvpn-poc/openvpn-vpc.png)
