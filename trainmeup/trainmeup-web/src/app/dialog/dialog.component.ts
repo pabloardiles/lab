@@ -8,8 +8,8 @@ import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material";
 })
 export class DialogComponent implements OnInit {
 
-	private isError: boolean;
-	private description: string[];
+	isError: boolean;
+	description: string[];
 
 	constructor(
 	    private dialogRef: MatDialogRef<DialogComponent>,
