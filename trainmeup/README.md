@@ -1,13 +1,13 @@
 
-##Deploy locally
+## Deploy locally
 
-###Requirements
+### Requirements
 
 - MongoDB installed
 - Nginx installed
 - Java 8 or above installed
 
-###Steps
+### Steps
 
 - Start database
 `./mongod --dbpath /path/to/db/data`
@@ -20,17 +20,17 @@
 - Start web tier
 `ng serve --open`
 
-##Deploy prod first time
+## Deploy prod first time
 
 These steps are intended to deploy TrainMeUp app in one single server for the first time.
 
-###Requirements on server
+### Requirements on server
 
 - MongoDB installed
 - Nginx installed
 - Java 8 or above installed
 
-###Build for prod
+### Build for prod
 
 - Go to trainmeup-web
 - Run `ng build --prod`
@@ -43,7 +43,7 @@ These steps are intended to deploy TrainMeUp app in one single server for the fi
 -- trainmeup-nginx.conf file
 -- trainmeup.service file
 
-###Steps
+### Steps
 
 Note: Use the following command to copy files into the server `scp -i <certificate> /path/to/file ec2-user@<instance_ip>:/home/ec2-user/`
 
@@ -55,7 +55,7 @@ Note: Use the following command to copy files into the server `scp -i <certifica
 - Create a new symlink (does not applies on CentOS or similar)
 `ln -s ../sites-available/trainmeup-nginx.conf trainmeup`
 - Only CentOS: comment the server block in /etc/nginx/nginx.conf file.
-- Copy trainmeup-web files to /var/www/html directory (or /usr/share/nginx/html in CentOS or similar).
+- Copy trainmeup-web files to /var/www/html directory. In CentOS you must copy those files to /usr/share/nginx/html directory and modify the root path in /etc/nginx/conf.d/trainmeup-nginx.conf accordingly.
 - Create a directory to hold database files (mount an additional volume for this purpose and edit /etc/fstab; see resources below)
 *Important:* in Amazon Linux 2 instance mount this volume in root folder (/), for some reason mongod service is not able to read or write data in another location.
 - Change permissions on that directory so mongod service is allowed to read the folder:
@@ -79,7 +79,7 @@ storage:
 `sudo systemctl status trainmeup`
 - Try reaching the application through http://<IP>:4200/ and click on Test button to test backend communication.
 
-##Resources
+## Resources
 
 - Install Nginx: https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/#prebuilt
 - Install MongoDB on Amazon Linux: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-amazon/
